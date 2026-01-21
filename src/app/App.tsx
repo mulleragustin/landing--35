@@ -388,7 +388,7 @@ function PricingSection() {
       <div className="absolute bottom-[100px] right-[20px] md:right-[100px] w-[180px] md:w-[250px] h-[180px] md:h-[250px] bg-[#6e2682] opacity-[0.08] rounded-full blur-[80px]"></div>
 
       <div className="relative z-10 max-w-[1200px] mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[50px] lg:gap-[100px] items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[50px] lg:gap-[80px] items-center">
           {/* Card única con ambos precios - IZQUIERDA */}
           <div className="relative">
             {/* Sombra decorativa de fondo */}
@@ -434,7 +434,7 @@ function PricingSection() {
                   <p className="leading-[1.5]">Movilidad y estiramientos para rodillas, caderas y espalda</p>
                 </div>
 
-                <div className="flex items-start gap-3 md:gap-4 bg-[#f6eafd] -mx-2 md:-mx-3 px-2 md:px-3 py-2 rounded-[8px]">
+                <div className="flex items-start gap-3 md:gap-4">
                   <CheckIcon />
                   <p className="leading-[1.5]">Guía nutricional de acompañamiento</p>
                 </div>
@@ -464,8 +464,8 @@ function PricingSection() {
           {/* Lado derecho - Títulos y explicación */}
           <div className="pt-0 lg:pt-0">
             {/* Títulos */}
-            <div className="text-center lg:text-left mb-[20px] md:mb-[30px]">
-              <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[32px] md:text-[52px] leading-[1.1] mb-3 md:mb-4">
+            <div className="text-center lg:text-left mb-[15px] md:mb-[20px]">
+              <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[32px] md:text-[52px] leading-[1.1] mb-2 md:mb-3">
                 Acceso al programa
               </h2>
               <h3 className="font-['Eixample_Dip'] font-bold text-[#cd7fea] text-[28px] md:text-[48px] mb-4 md:mb-6 text-balance">
@@ -489,11 +489,11 @@ function PricingSection() {
               </div>
             </div>
 
-            <h3 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[28px] md:text-[36px] text-center lg:text-left mb-[20px] md:mb-[30px] leading-[1.2]">
+            <h3 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[28px] md:text-[36px] text-center lg:text-left mb-[15px] md:mb-[20px] leading-[1.2]">
               ¿Por qué solo este precio?
             </h3>
 
-            <p className="font-['Montserrat'] text-[#6e2682] text-[16px] md:text-[18px] leading-[1.8] text-center lg:text-left mb-[30px] md:mb-[40px] text-balance">
+            <p className="font-['Montserrat'] text-[#6e2682] text-[16px] md:text-[18px] leading-[1.8] text-center lg:text-left mb-[25px] md:mb-[30px] text-balance">
               Porque quiero que cualquier mujer +35 pueda acceder a un plan que sí sostengan en el tiempo,
               <span className="font-bold text-[#cd7fea]"> sin gastar fortunas en gimnasios</span>, sin rutinas imposibles
               y sin soluciones que duran unas semanas y después abandonan.
@@ -505,15 +505,15 @@ function PricingSection() {
                 {/* Glow sutil */}
                 <div className="absolute inset-0 bg-[#cd7fea] opacity-20 blur-2xl rounded-full scale-110"></div>
 
-                <div className="relative bg-gradient-to-br from-[#cd7fea] via-[#b968d1] to-[#a557bd] rounded-full w-[220px] md:w-[280px] h-[220px] md:h-[280px] flex flex-col items-center justify-center shadow-2xl">
-                  <p className="font-['Montserrat'] text-white text-[14px] md:text-[16px] font-bold mb-1 md:mb-2 tracking-wider">MENOS DE</p>
-                  <p className="font-['Integral_CF'] text-white text-[48px] md:text-[64px] leading-[1]">$2.500</p>
-                  <p className="font-['Montserrat'] text-white text-[20px] md:text-[26px] font-bold">EL DÍA</p>
+                <div className="relative bg-gradient-to-br from-[#cd7fea] via-[#b968d1] to-[#a557bd] rounded-full w-[200px] md:w-[240px] h-[200px] md:h-[240px] flex flex-col items-center justify-center shadow-2xl animate-float">
+                  <p className="font-['Montserrat'] text-white text-[12px] md:text-[14px] font-bold mb-1 tracking-wider">MENOS DE</p>
+                  <p className="font-['Integral_CF'] text-white text-[42px] md:text-[52px] leading-[1]">$2.500</p>
+                  <p className="font-['Montserrat'] text-white text-[18px] md:text-[22px] font-bold">EL DÍA</p>
                 </div>
               </div>
             </div>
 
-            <p className="font-['Montserrat'] text-[#6e2682] text-[13px] md:text-[14px] text-center lg:text-left opacity-70 italic">
+            <p className="font-['Montserrat'] text-[#6e2682] text-[14px] md:text-[16px] text-center lg:text-left opacity-70 italic">
               *Basado en 4 meses de acceso
             </p>
           </div>
