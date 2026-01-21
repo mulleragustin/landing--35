@@ -723,7 +723,7 @@ function FAQSection() {
               <div
                 className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}
               >
-                <div className="px-[20px] md:px-[30px] pb-[20px] md:pb-[26px] pt-[8px] md:pt-[10px] bg-gradient-to-r from-[#f6eafd] to-transparent border-t-2 border-[#e1b4f3]">
+                <div className="px-[20px] md:px-[30px] py-[18px] md:py-[24px] bg-[#f6eafd] border-t-2 border-[#e1b4f3]">
                   <p className="font-['Montserrat'] text-[#6e2682] text-[15px] md:text-[18px] leading-[1.7]">
                     {faq.answer}
                   </p>
