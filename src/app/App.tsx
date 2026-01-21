@@ -3,7 +3,7 @@ import svgPathsLogo from "@/imports/svg-lhr0446dji";
 
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Logos from "@/imports/Logos";
 
@@ -60,27 +60,27 @@ function Header() {
 // Hero Section
 function HeroSection() {
   return (
-    <div className="relative w-full bg-gradient-to-b from-white via-[#fdf5ff] to-white py-[35px] md:py-[60px] px-[20px] md:px-[109px]">
+    <div className="relative w-full bg-gradient-to-b from-white via-[#fdf5ff] to-white py-[30px] md:py-[50px] px-[20px] md:px-[109px]">
       {/* Elementos decorativos de fondo */}
       <div className="absolute top-[150px] left-[50px] md:left-[100px] w-[200px] md:w-[400px] h-[200px] md:h-[400px] bg-[#cd7fea] opacity-[0.06] rounded-full blur-[120px]"></div>
       <div className="absolute bottom-[150px] right-[50px] md:right-[100px] w-[180px] md:w-[350px] h-[180px] md:h-[350px] bg-[#6e2682] opacity-[0.06] rounded-full blur-[100px]"></div>
-      
+
       <div className="relative z-10 max-w-[1200px] mx-auto flex flex-col items-center">
         {/* Logo RTFIT + 35 Fuerza Sin Impacto - Más compacto */}
         <div className="mb-[20px] md:mb-[30px] flex justify-center w-full">
-          <div className="h-[70px] md:h-[130px] w-[148px] md:w-[276px]">
+          <div className="h-[100px] md:h-[180px] w-[212px] md:w-[382px]">
             <Logos />
           </div>
         </div>
-        
+
         {/* Headline Text - Mejorada jerarquía */}
-        <div className="text-center mb-[30px] md:mb-[50px] w-full">
-          <h1 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[28px] md:text-[62px] leading-[1.15] mb-5 md:mb-8 px-2">
+        <div className="text-center mb-[25px] md:mb-[40px] w-full">
+          <h1 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[28px] md:text-[62px] leading-[1.15] mb-4 md:mb-6 px-2 text-balance">
             El método +35 para volver a sentirte fuerte y cómoda con tu cuerpo
           </h1>
-          
+
           {/* Prueba Social - Badge destacado */}
-          <div className="inline-flex items-center gap-2 md:gap-3 bg-gradient-to-r from-[#cd7fea] to-[#b968d1] rounded-full px-[16px] md:px-[32px] py-[12px] md:py-[16px] mb-5 md:mb-7 shadow-lg max-w-full">
+          <div className="inline-flex items-center gap-2 md:gap-3 bg-gradient-to-r from-[#cd7fea] to-[#b968d1] rounded-full px-[16px] md:px-[32px] py-[12px] md:py-[16px] mb-4 md:mb-6 shadow-lg max-w-full">
             <div className="flex -space-x-1 md:-space-x-2">
               <div className="w-[26px] md:w-[36px] h-[26px] md:h-[36px] rounded-full bg-white border-2 border-white flex items-center justify-center flex-shrink-0">
                 <div className="w-full h-full rounded-full bg-gradient-to-br from-[#b968d1] to-[#a557bd]"></div>
@@ -96,32 +96,32 @@ function HeroSection() {
               +5000 alumnas ya transformaron su cuerpo
             </p>
           </div>
-          
+
           <div className="space-y-3 md:space-y-4">
-            <p className="font-['Montserrat'] font-bold text-[#cd7fea] text-[19px] md:text-[30px] leading-[1.3]">
+            <p className="font-['Montserrat'] font-bold text-[#cd7fea] text-[19px] md:text-[30px] leading-[1.3] text-balance">
               SIN impacto, cuidando tus articulaciones
             </p>
-            <p className="font-['Montserrat'] font-semibold text-[#6e2682] text-[16px] md:text-[24px] leading-[1.4]">
+            <p className="font-['Montserrat'] font-semibold text-[#6e2682] text-[16px] md:text-[24px] leading-[1.4] text-balance">
               En 4 Semanas Con 20 Minutos al Día
             </p>
           </div>
         </div>
-        
+
         {/* VSL Video Container */}
-        <div className="relative w-full max-w-[900px] mb-[25px] md:mb-[50px]">
+        <div className="relative w-full max-w-[900px] mb-[20px] md:mb-[40px]">
           <div className="absolute inset-0 bg-gradient-to-br from-[#cd7fea] to-[#b968d1] opacity-20 blur-2xl rounded-[20px] scale-[1.03]"></div>
-          
+
           <div className="relative aspect-video bg-gradient-to-br from-[#1a1a1a] to-[#000000] border-[3px] md:border-[6px] border-[#cd7fea] rounded-[10px] md:rounded-[20px] flex items-center justify-center shadow-2xl overflow-hidden">
             <p className="font-['Integral_CF'] text-white text-[28px] md:text-[64px] opacity-80">VSL</p>
           </div>
         </div>
-        
+
         {/* Bottom Text and CTA */}
         <div className="text-center w-full">
-          <p className="font-['Montserrat'] font-semibold text-[#6e2682] text-[16px] md:text-[24px] mb-[25px] md:mb-[40px] leading-[1.4]">
+          <p className="font-['Montserrat'] font-semibold text-[#6e2682] text-[16px] md:text-[24px] mb-[20px] md:mb-[30px] leading-[1.4] text-balance">
             Un plan simple, pensado para que esta vez sí lo sostengas
           </p>
-          
+
           <button className="bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[32px] md:px-[70px] py-[18px] md:py-[26px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[24px] shadow-2xl hover:shadow-[0_20px_60px_rgba(205,127,234,0.5)] hover:scale-[1.05] transform w-full md:w-auto">
             Quiero empezar sin exigirme
           </button>
@@ -133,8 +133,8 @@ function HeroSection() {
 
 // Testimonials Section
 function TestimonialsSection() {
-  const [selectedImage, setSelectedImage] = React.useState<{url: string, label: string} | null>(null);
-  
+  const [selectedImage, setSelectedImage] = React.useState<{ url: string, label: string } | null>(null);
+
   // Componentes de flechas personalizadas
   const NextArrow = (props: any) => {
     const { onClick } = props;
@@ -143,10 +143,10 @@ function TestimonialsSection() {
         onClick={onClick}
         className="hidden md:flex absolute right-[-60px] top-1/2 -translate-y-1/2 z-10 w-[50px] h-[50px] rounded-full bg-gradient-to-br from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
       >
-        <svg 
-          className="w-[20px] h-[20px] text-white transition-transform duration-300 group-hover:translate-x-1" 
-          fill="none" 
-          viewBox="0 0 24 24" 
+        <svg
+          className="w-[20px] h-[20px] text-white transition-transform duration-300 group-hover:translate-x-1"
+          fill="none"
+          viewBox="0 0 24 24"
           stroke="currentColor"
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
@@ -162,10 +162,10 @@ function TestimonialsSection() {
         onClick={onClick}
         className="hidden md:flex absolute left-[-60px] top-1/2 -translate-y-1/2 z-10 w-[50px] h-[50px] rounded-full bg-gradient-to-br from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
       >
-        <svg 
-          className="w-[20px] h-[20px] text-white transition-transform duration-300 group-hover:-translate-x-1" 
-          fill="none" 
-          viewBox="0 0 24 24" 
+        <svg
+          className="w-[20px] h-[20px] text-white transition-transform duration-300 group-hover:-translate-x-1"
+          fill="none"
+          viewBox="0 0 24 24"
           stroke="currentColor"
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
@@ -188,7 +188,7 @@ function TestimonialsSection() {
     pauseOnHover: true,
     arrows: true, // Las flechas están ocultas en mobile con CSS
   };
-  
+
   // Array de testimonios - solo con antes/después
   const testimonials = [
     {
@@ -211,26 +211,26 @@ function TestimonialsSection() {
     },
     // Aquí puedes agregar más testimonios fácilmente
   ];
-  
+
   return (
-    <div className="relative py-[35px] md:py-[80px] px-[16px] md:px-[109px] bg-gradient-to-b from-[#f6eafd] via-[#fdf5ff] to-[#f6eafd]">
+    <div className="relative py-[30px] md:py-[60px] px-[16px] md:px-[109px] bg-gradient-to-b from-[#f6eafd] via-[#fdf5ff] to-[#f6eafd]">
       {/* Elementos decorativos de fondo */}
       <div className="absolute top-[100px] left-[20px] md:left-[80px] w-[200px] md:w-[300px] h-[200px] md:h-[300px] bg-[#cd7fea] opacity-[0.08] rounded-full blur-[100px]"></div>
       <div className="absolute bottom-[150px] right-[20px] md:right-[80px] w-[200px] md:w-[350px] h-[200px] md:h-[300px] bg-[#6e2682] opacity-[0.08] rounded-full blur-[100px]"></div>
-      
+
       <div className="relative z-10">
-        <div className="text-center mb-[30px] md:mb-[60px]">
+        <div className="text-center mb-[25px] md:mb-[50px]">
           <div className="inline-block bg-white border-2 border-[#cd7fea] rounded-full px-[16px] md:px-[28px] py-[8px] md:py-[12px] mb-3 md:mb-6">
             <p className="font-['Montserrat'] font-bold text-[#cd7fea] text-[11px] md:text-[14px] tracking-wider uppercase">
               Testimonios Reales
             </p>
           </div>
-          
-          <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[26px] md:text-[52px]">
+
+          <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[26px] md:text-[52px] text-balance">
             Así podes cambiar en 4 semanas
           </h2>
         </div>
-        
+
         <div className="max-w-[1100px] mx-auto relative">
           <Slider {...settings}>
             {testimonials.map((testimonial) => (
@@ -251,18 +251,18 @@ function TestimonialsSection() {
                       )}
                     </div>
                   </div>
-                  
+
                   <div className="bg-gradient-to-r from-[#f6eafd] to-transparent border-l-4 border-[#cd7fea] p-[14px] md:p-[20px] rounded-[8px] mb-[20px] md:mb-[30px]">
                     <p className="font-['Montserrat'] text-[#6e2682] text-[14px] md:text-[18px] leading-[1.6] italic">
                       "{testimonial.quote}"
                     </p>
                   </div>
-                  
+
                   {/* Imágenes antes/después con aspect ratio fijo */}
                   <div className="grid grid-cols-2 gap-[12px] md:gap-[30px] mb-[18px] md:mb-[30px]">
-                    <div 
+                    <div
                       className="relative md:cursor-default cursor-pointer active:scale-95 md:active:scale-100 transition-transform"
-                      onClick={() => setSelectedImage({url: 'placeholder', label: 'ANTES'})}
+                      onClick={() => setSelectedImage({ url: 'placeholder', label: 'ANTES' })}
                     >
                       <div className="absolute top-[10px] md:top-[15px] left-[10px] md:left-[15px] bg-white border-2 border-[#6e2682] rounded-full px-[10px] md:px-[16px] py-[5px] md:py-[8px] z-10 pointer-events-none shadow-lg">
                         <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[11px] md:text-[14px]">ANTES</p>
@@ -277,10 +277,10 @@ function TestimonialsSection() {
                         <p className="font-['Montserrat'] text-gray-500 text-[14px] md:text-[18px]">Imagen</p>
                       </div>
                     </div>
-                    
-                    <div 
+
+                    <div
                       className="relative md:cursor-default cursor-pointer active:scale-95 md:active:scale-100 transition-transform"
-                      onClick={() => setSelectedImage({url: 'placeholder', label: 'DESPUÉS'})}
+                      onClick={() => setSelectedImage({ url: 'placeholder', label: 'DESPUÉS' })}
                     >
                       <div className="absolute top-[10px] md:top-[15px] left-[10px] md:left-[15px] bg-gradient-to-br from-[#cd7fea] to-[#b968d1] rounded-full px-[10px] md:px-[16px] py-[5px] md:py-[8px] z-10 pointer-events-none shadow-lg">
                         <p className="font-['Montserrat'] font-bold text-white text-[11px] md:text-[14px]">DESPUÉS</p>
@@ -296,7 +296,7 @@ function TestimonialsSection() {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="bg-gradient-to-br from-[#cd7fea] to-[#b968d1] rounded-[12px] md:rounded-[20px] p-[18px] md:p-[30px] text-white">
                     <h4 className="font-['Eixample_Dip'] font-bold text-[16px] md:text-[24px] mb-2 md:mb-3 leading-[1.25]">
                       {testimonial.resultTitle}
@@ -310,22 +310,22 @@ function TestimonialsSection() {
             ))}
           </Slider>
         </div>
-        
+
         {/* CTA Button */}
-        <div className="text-center mt-[50px] md:mt-[80px] px-4">
+        <div className="text-center mt-[40px] md:mt-[60px] px-4">
           <button className="bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[40px] md:px-[60px] py-[18px] md:py-[24px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[22px] shadow-xl hover:shadow-2xl hover:scale-[1.03] transform w-full md:w-auto">
             QUIERO UNIRME AHORA
           </button>
         </div>
       </div>
-      
+
       {/* Modal Lightbox para imágenes - Solo mobile */}
       {selectedImage && (
-        <div 
+        <div
           className="md:hidden fixed inset-0 bg-black/96 z-[100] flex items-center justify-center p-5 animate-fadeIn"
           onClick={() => setSelectedImage(null)}
         >
-          <button 
+          <button
             className="absolute top-5 right-5 w-[44px] h-[44px] bg-white/15 hover:bg-white/25 rounded-full flex items-center justify-center transition-all backdrop-blur-sm"
             onClick={() => setSelectedImage(null)}
           >
@@ -333,7 +333,7 @@ function TestimonialsSection() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          
+
           <div className="w-full max-w-[500px]" onClick={(e) => e.stopPropagation()}>
             {/* Badge label */}
             <div className={`mb-5 inline-block ${selectedImage.label === 'DESPUÉS' ? 'bg-gradient-to-br from-[#cd7fea] to-[#b968d1]' : 'bg-white'} rounded-full px-[18px] py-[9px] shadow-xl border-2 ${selectedImage.label === 'DESPUÉS' ? 'border-white/20' : 'border-[#cd7fea]'}`}>
@@ -341,12 +341,12 @@ function TestimonialsSection() {
                 {selectedImage.label}
               </p>
             </div>
-            
+
             {/* Imagen */}
             <div className="aspect-[3/4] bg-gradient-to-br from-gray-200 to-gray-300 rounded-[20px] flex items-center justify-center border-4 border-[#cd7fea] overflow-hidden shadow-2xl">
               <p className="font-['Montserrat'] text-gray-500 text-[20px] font-semibold">Imagen Ampliada</p>
             </div>
-            
+
             <p className="font-['Montserrat'] text-white text-center mt-5 text-[14px] opacity-90 leading-[1.5]">
               Toca fuera de la imagen para cerrar
             </p>
@@ -379,47 +379,21 @@ function CheckIcon() {
 // Pricing Section
 function PricingSection() {
   return (
-    <div className="relative py-[60px] md:py-[120px] px-[20px] md:px-[109px] bg-white">
+    <div className="relative py-[50px] md:py-[100px] px-[20px] md:px-[109px] bg-white">
       {/* Fondo decorativo con gradiente */}
       <div className="absolute inset-0 opacity-[0.15] pointer-events-none bg-gradient-to-br from-gray-100 via-gray-50 to-white"></div>
-      
+
       {/* Elementos decorativos de fondo */}
       <div className="absolute top-[100px] left-[20px] md:left-[50px] w-[200px] md:w-[300px] h-[200px] md:h-[300px] bg-[#cd7fea] opacity-[0.08] rounded-full blur-[100px]"></div>
       <div className="absolute bottom-[100px] right-[20px] md:right-[100px] w-[180px] md:w-[250px] h-[180px] md:h-[250px] bg-[#6e2682] opacity-[0.08] rounded-full blur-[80px]"></div>
-      
+
       <div className="relative z-10 max-w-[1200px] mx-auto">
-        {/* Título principal */}
-        <div className="text-center mb-[50px] md:mb-[80px]">
-          <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[32px] md:text-[52px] leading-[1.1] mb-3 md:mb-4 px-4">
-            Acceso al programa
-          </h2>
-          <h3 className="font-['Eixample_Dip'] font-bold text-[#cd7fea] text-[28px] md:text-[48px] mb-6 md:mb-8 px-4">
-            +35 Fuerza Sin Impacto
-          </h3>
-          
-          {/* Prueba Social - Badge con número */}
-          <div className="inline-block">
-            <div className="bg-white border-2 border-[#cd7fea] rounded-full px-[16px] md:px-[32px] py-[10px] md:py-[16px] shadow-lg">
-              <div className="flex items-center gap-2 md:gap-4">
-                <div className="bg-gradient-to-br from-[#cd7fea] to-[#b968d1] rounded-full w-[32px] md:w-[50px] h-[32px] md:h-[50px] flex items-center justify-center flex-shrink-0">
-                  <svg className="w-[16px] md:w-[24px] h-[16px] md:h-[24px]" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth="3">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[13px] md:text-[18px] leading-tight">
-                  +5000 alumnas hicieron exitosamente este programa
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[50px] lg:gap-[100px] items-start">
-          {/* Card única con ambos precios */}
+          {/* Card única con ambos precios - IZQUIERDA */}
           <div className="relative">
             {/* Sombra decorativa de fondo */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#cd7fea] to-[#b968d1] opacity-20 blur-xl rounded-[30px] scale-[1.02]"></div>
-            
+
             <div className="relative bg-white border-4 border-[#cd7fea] rounded-[20px] md:rounded-[30px] p-[30px] md:p-[50px] shadow-2xl">
               {/* Header del precio */}
               <div className="text-center mb-[30px] md:mb-[40px] pb-[20px] md:pb-[30px] border-b-2 border-[#f6eafd]">
@@ -428,83 +402,109 @@ function PricingSection() {
                     OFERTA ESPECIAL
                   </p>
                 </div>
-                
-                <p className="font-['Integral_CF'] text-[#cd7fea] text-[36px] md:text-[52px] leading-[1] mb-2 md:mb-3">
+
+                <p className="font-['Integral_CF'] text-[#cd7fea] text-[36px] md:text-[52px] leading-[1] mb-2 md:mb-3 whitespace-nowrap">
                   $73.690 <span className="text-[#6e2682]">-</span> 60 USD
                 </p>
                 <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[12px] md:text-[14px] uppercase tracking-wide mb-2 px-2">
                   Pesos Argentinos o si estás en el exterior
                 </p>
-                
+
                 <div className="bg-[#f6eafd] border border-[#cd7fea] rounded-[12px] px-[16px] md:px-[20px] py-[10px] md:py-[12px] inline-block">
                   <p className="font-['Montserrat'] font-bold text-[#cd7fea] text-[15px] md:text-[18px]">
                     3 cuotas sin interés de $24.563
                   </p>
                 </div>
               </div>
-              
+
               {/* Lista de beneficios */}
               <div className="space-y-3 md:space-y-4 font-['Montserrat'] text-[#6e2682] text-[15px] md:text-[18px] mb-[30px] md:mb-[40px]">
                 <div className="flex items-start gap-3 md:gap-4">
                   <CheckIcon />
                   <p className="font-semibold leading-[1.5]">4 clases por semana (20 min)</p>
                 </div>
-                
+
                 <div className="flex items-start gap-3 md:gap-4">
                   <CheckIcon />
                   <p className="font-semibold leading-[1.5]">4 meses de acceso</p>
                 </div>
-                
+
                 <div className="flex items-start gap-3 md:gap-4">
                   <CheckIcon />
                   <p className="leading-[1.5]">Movilidad y estiramientos para rodillas, caderas y espalda</p>
                 </div>
-                
+
                 <div className="flex items-start gap-3 md:gap-4 bg-[#f6eafd] -mx-2 md:-mx-3 px-2 md:px-3 py-2 rounded-[8px]">
                   <CheckIcon />
                   <p className="leading-[1.5]">Guía nutricional de acompañamiento</p>
                 </div>
-                
+
                 <div className="flex items-start gap-3 md:gap-4">
                   <CheckIcon />
                   <p className="leading-[1.5]">Seguimiento y comunidad para sostener la constancia</p>
                 </div>
-                
+
                 <div className="flex items-start gap-3 md:gap-4">
                   <CheckIcon />
                   <p className="leading-[1.5]">Soporte 24/7</p>
                 </div>
               </div>
-              
+
               {/* Botón CTA mejorado */}
               <button className="relative bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 w-full px-[24px] py-[20px] md:py-[24px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[19px] md:text-[22px] shadow-xl hover:shadow-2xl hover:scale-[1.03] transform">
                 ¡LO QUIERO!
               </button>
-              
+
               <p className="font-['Montserrat'] text-[#6e2682] text-[13px] md:text-[15px] text-center mt-4 opacity-70 leading-[1.4]">
                 Acceso inmediato después del pago
               </p>
             </div>
           </div>
-          
-          {/* Lado derecho - SIN card, más simple */}
-          <div className="pt-0 lg:pt-[40px]">
-            <h3 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[28px] md:text-[36px] text-center mb-[30px] md:mb-[40px] leading-[1.2] px-4">
+
+          {/* Lado derecho - Títulos y explicación */}
+          <div className="pt-0 lg:pt-0">
+            {/* Títulos */}
+            <div className="text-center lg:text-left mb-[20px] md:mb-[30px]">
+              <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[32px] md:text-[52px] leading-[1.1] mb-3 md:mb-4">
+                Acceso al programa
+              </h2>
+              <h3 className="font-['Eixample_Dip'] font-bold text-[#cd7fea] text-[28px] md:text-[48px] mb-4 md:mb-6 text-balance">
+                +35 Fuerza Sin Impacto
+              </h3>
+
+              {/* Prueba Social - Badge con número */}
+              <div className="inline-block">
+                <div className="bg-white border-2 border-[#cd7fea] rounded-full px-[16px] md:px-[32px] py-[10px] md:py-[16px] shadow-lg">
+                  <div className="flex items-center gap-2 md:gap-4">
+                    <div className="bg-gradient-to-br from-[#cd7fea] to-[#b968d1] rounded-full w-[32px] md:w-[50px] h-[32px] md:h-[50px] flex items-center justify-center flex-shrink-0">
+                      <svg className="w-[16px] md:w-[24px] h-[16px] md:h-[24px]" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth="3">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[13px] md:text-[18px] leading-tight">
+                      +5000 alumnas hicieron exitosamente este programa
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[28px] md:text-[36px] text-center lg:text-left mb-[20px] md:mb-[30px] leading-[1.2]">
               ¿Por qué solo este precio?
             </h3>
-            
-            <p className="font-['Montserrat'] text-[#6e2682] text-[16px] md:text-[18px] leading-[1.8] text-center mb-[40px] md:mb-[60px] px-4">
-              Porque quiero que cualquier mujer +35 pueda acceder a un plan que sí sostengan en el tiempo, 
-              <span className="font-bold text-[#cd7fea]"> sin gastar fortunas en gimnasios</span>, sin rutinas imposibles 
+
+            <p className="font-['Montserrat'] text-[#6e2682] text-[16px] md:text-[18px] leading-[1.8] text-center lg:text-left mb-[30px] md:mb-[40px] text-balance">
+              Porque quiero que cualquier mujer +35 pueda acceder a un plan que sí sostengan en el tiempo,
+              <span className="font-bold text-[#cd7fea]"> sin gastar fortunas en gimnasios</span>, sin rutinas imposibles
               y sin soluciones que duran unas semanas y después abandonan.
             </p>
-            
+
             {/* Precio destacado con círculo */}
-            <div className="flex items-center justify-center mb-[15px] md:mb-[20px]">
+            <div className="flex items-center justify-center lg:justify-start mb-[15px] md:mb-[20px]">
               <div className="relative">
                 {/* Glow sutil */}
                 <div className="absolute inset-0 bg-[#cd7fea] opacity-20 blur-2xl rounded-full scale-110"></div>
-                
+
                 <div className="relative bg-gradient-to-br from-[#cd7fea] via-[#b968d1] to-[#a557bd] rounded-full w-[220px] md:w-[280px] h-[220px] md:h-[280px] flex flex-col items-center justify-center shadow-2xl">
                   <p className="font-['Montserrat'] text-white text-[14px] md:text-[16px] font-bold mb-1 md:mb-2 tracking-wider">MENOS DE</p>
                   <p className="font-['Integral_CF'] text-white text-[48px] md:text-[64px] leading-[1]">$2.500</p>
@@ -512,8 +512,8 @@ function PricingSection() {
                 </div>
               </div>
             </div>
-            
-            <p className="font-['Montserrat'] text-[#6e2682] text-[13px] md:text-[14px] text-center opacity-70 italic">
+
+            <p className="font-['Montserrat'] text-[#6e2682] text-[13px] md:text-[14px] text-center lg:text-left opacity-70 italic">
               *Basado en 4 meses de acceso
             </p>
           </div>
@@ -526,18 +526,18 @@ function PricingSection() {
 // About Romina Section
 function AboutSection() {
   return (
-    <div className="relative py-[40px] md:py-[80px] px-[20px] md:px-[109px] bg-gradient-to-b from-white via-[#fdf5ff] to-white overflow-hidden">
+    <div className="relative py-[35px] md:py-[70px] px-[20px] md:px-[109px] bg-gradient-to-b from-white via-[#fdf5ff] to-white overflow-hidden">
       {/* Elementos decorativos de fondo */}
       <div className="absolute top-[80px] left-[20px] md:left-[100px] w-[250px] md:w-[400px] h-[250px] md:h-[400px] bg-[#cd7fea] opacity-[0.05] rounded-full blur-[120px]"></div>
       <div className="absolute bottom-[100px] right-[20px] md:right-[80px] w-[200px] md:w-[350px] h-[200px] md:h-[350px] bg-[#6e2682] opacity-[0.05] rounded-full blur-[100px]"></div>
-      
+
       <div className="relative z-10 max-w-[1200px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[50px] lg:gap-[100px] items-center">
           {/* Lado izquierdo - Espacio para imagen */}
           <div className="relative">
             {/* Sombra decorativa de fondo */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#cd7fea] to-[#b968d1] opacity-15 blur-2xl rounded-[30px] scale-[1.05]"></div>
-            
+
             {/* Contenedor de la imagen principal - LISTO PARA TU IMAGEN */}
             <div className="relative bg-white border-[4px] md:border-[6px] border-[#cd7fea] rounded-[20px] md:rounded-[30px] overflow-hidden shadow-2xl min-h-[400px] md:min-h-[600px] flex items-center justify-center">
               {/* AQUÍ VA TU IMAGEN */}
@@ -545,12 +545,12 @@ function AboutSection() {
                 Espacio para tu imagen
               </p>
             </div>
-            
+
             {/* Círculos decorativos sutiles */}
             <div className="absolute -bottom-[20px] -left-[20px] w-[100px] h-[100px] bg-[#cd7fea] opacity-20 rounded-full blur-xl"></div>
             <div className="absolute -top-[15px] -left-[15px] w-[60px] h-[60px] bg-[#b968d1] opacity-25 rounded-full blur-lg"></div>
           </div>
-          
+
           {/* Lado derecho - Contenido mejorado */}
           <div>
             {/* Badge superior */}
@@ -561,51 +561,51 @@ function AboutSection() {
                 </p>
               </div>
             </div>
-            
-            <h2 className="font-['Eixample_Dip'] font-bold text-[#cd7fea] text-[28px] md:text-[42px] mb-6 md:mb-8 leading-[1.2] text-center lg:text-left">
+
+            <h2 className="font-['Eixample_Dip'] font-bold text-[#cd7fea] text-[28px] md:text-[42px] mb-5 md:mb-7 leading-[1.2] text-center lg:text-left text-balance">
               Soy Romina Traetta, entrenadora y creadora del programa +35 Fuerza Sin Impacto.
             </h2>
-            
-            <div className="space-y-4 md:space-y-6 mb-6 md:mb-8">
+
+            <div className="space-y-3 md:space-y-5 mb-5 md:mb-7">
               {/* Highlight principal */}
               <div className="bg-gradient-to-r from-[#f6eafd] to-transparent border-l-4 border-[#cd7fea] p-[16px] md:p-[20px] rounded-[8px]">
-                <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[17px] md:text-[20px] leading-[1.4] text-center lg:text-left">
+                <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[17px] md:text-[20px] leading-[1.4] text-center lg:text-left text-balance">
                   Entreno para sentirme fuerte, liviana y con energía.
                 </p>
               </div>
-              
+
               {/* Texto normal */}
-              <p className="font-['Montserrat'] text-[#6e2682] text-[15px] md:text-[17px] leading-[1.8] text-center lg:text-left">
-                Hace años que aplico fuerza sin impacto porque es lo que me deja sostener mi físico 
+              <p className="font-['Montserrat'] text-[#6e2682] text-[15px] md:text-[17px] leading-[1.8] text-center lg:text-left text-balance">
+                Hace años que aplico fuerza sin impacto porque es lo que me deja sostener mi físico
                 sin dolor, sin lesiones y sin abandonar.
               </p>
-              
+
               {/* Highlight secundario */}
               <div className="bg-white border-2 border-[#cd7fea] p-[16px] md:p-[20px] rounded-[12px] shadow-lg">
-                <p className="font-['Montserrat'] font-semibold text-[#6e2682] text-[16px] md:text-[18px] leading-[1.6] text-center lg:text-left">
+                <p className="font-['Montserrat'] font-semibold text-[#6e2682] text-[16px] md:text-[18px] leading-[1.6] text-center lg:text-left text-balance">
                   Este método está pensado para mujeres +35 con poco tiempo y ganas de resultados reales.
                 </p>
               </div>
             </div>
-            
+
             {/* Stats o datos destacados */}
-            <div className="grid grid-cols-3 gap-3 md:gap-4 mb-6 md:mb-8">
+            <div className="grid grid-cols-3 gap-3 md:gap-4 mb-5 md:mb-7">
               <div className="text-center bg-gradient-to-br from-[#f6eafd] to-white border-2 border-[#e1b4f3] rounded-[12px] p-[16px] md:p-[20px]">
                 <p className="font-['Integral_CF'] text-[#cd7fea] text-[26px] md:text-[32px] leading-[1] mb-1">20'</p>
                 <p className="font-['Montserrat'] text-[#6e2682] text-[12px] md:text-[13px] font-semibold">por clase</p>
               </div>
-              
+
               <div className="text-center bg-gradient-to-br from-[#f6eafd] to-white border-2 border-[#e1b4f3] rounded-[12px] p-[16px] md:p-[20px]">
                 <p className="font-['Integral_CF'] text-[#cd7fea] text-[26px] md:text-[32px] leading-[1] mb-1">4x</p>
                 <p className="font-['Montserrat'] text-[#6e2682] text-[12px] md:text-[13px] font-semibold">semana</p>
               </div>
-              
+
               <div className="text-center bg-gradient-to-br from-[#f6eafd] to-white border-2 border-[#e1b4f3] rounded-[12px] p-[16px] md:p-[20px]">
                 <p className="font-['Integral_CF'] text-[#cd7fea] text-[26px] md:text-[32px] leading-[1] mb-1">0</p>
                 <p className="font-['Montserrat'] text-[#6e2682] text-[12px] md:text-[13px] font-semibold">impacto</p>
               </div>
             </div>
-            
+
             {/* CTA */}
             <div className="flex justify-center lg:justify-start">
               <button className="bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[30px] md:px-[40px] py-[16px] md:py-[18px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[16px] md:text-[18px] shadow-lg hover:shadow-xl hover:scale-[1.02] transform w-full md:w-auto">
@@ -622,31 +622,31 @@ function AboutSection() {
 // CTA Section
 function CTASection() {
   return (
-    <div className="relative py-[80px] md:py-[140px] px-[20px] md:px-[109px] overflow-hidden">
+    <div className="relative py-[60px] md:py-[100px] px-[20px] md:px-[109px] overflow-hidden">
       <div className="absolute inset-0 pointer-events-none opacity-40 bg-gradient-to-br from-gray-100 via-gray-200 to-gray-100"></div>
-      
+
       {/* Overlay oscuro para mejor contraste */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/20"></div>
-      
+
+
       {/* Círculos decorativos */}
       <div className="absolute top-[50px] left-[20px] md:left-[100px] w-[200px] md:w-[350px] h-[200px] md:h-[350px] bg-[#cd7fea] opacity-[0.08] rounded-full blur-[100px]"></div>
       <div className="absolute bottom-[50px] right-[20px] md:right-[100px] w-[180px] md:w-[300px] h-[180px] md:h-[300px] bg-[#6e2682] opacity-[0.08] rounded-full blur-[80px]"></div>
-      
+
       <div className="relative z-10 max-w-[900px] mx-auto text-center">
         <div className="inline-block bg-white border-2 border-[#cd7fea] rounded-full px-[20px] md:px-[28px] py-[10px] md:py-[12px] mb-6 md:mb-8">
           <p className="font-['Montserrat'] font-bold text-[#cd7fea] text-[12px] md:text-[14px] tracking-wider uppercase">
             Tu Transformación Empieza Hoy
           </p>
         </div>
-        
-        <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[32px] md:text-[56px] mb-4 md:mb-6 leading-[1.2] px-4">
+
+        <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[32px] md:text-[56px] mb-3 md:mb-5 leading-[1.2] px-4 text-balance">
           Es tu momento de volver a sentirte bien
         </h2>
-        
-        <p className="font-['Montserrat'] font-semibold text-[#6e2682] text-[18px] md:text-[26px] mb-8 md:mb-12 px-4">
+
+        <p className="font-['Montserrat'] font-semibold text-[#6e2682] text-[18px] md:text-[26px] mb-6 md:mb-8 px-4 text-balance">
           4 semanas · 20 minutos · Fuerza sin impacto desde casa.
         </p>
-        
+
         <button className="bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[40px] md:px-[70px] py-[20px] md:py-[26px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[24px] shadow-2xl hover:shadow-[0_20px_60px_rgba(205,127,234,0.4)] hover:scale-[1.05] transform w-full md:w-auto">
           QUIERO UNIRME A +35
         </button>
@@ -658,7 +658,7 @@ function CTASection() {
 // FAQ Section
 function FAQSection() {
   const [openIndex, setOpenIndex] = React.useState<number | null>(null);
-  
+
   const faqs = [
     {
       question: "¿Cuánto tiempo?",
@@ -681,28 +681,28 @@ function FAQSection() {
       answer: "Clases guiadas, cuido tu técnica, resultados reales, trabajo de fuerza a conciencia sin impacto. Las clases son todas diferentes."
     }
   ];
-  
+
   return (
-    <div className="relative py-[60px] md:py-[120px] px-[20px] md:px-[109px] bg-gradient-to-b from-white via-[#fdf5ff] to-white overflow-hidden">
+    <div className="relative py-[50px] md:py-[100px] px-[20px] md:px-[109px] bg-gradient-to-b from-white via-[#fdf5ff] to-white overflow-hidden">
       {/* Elementos decorativos de fondo */}
       <div className="absolute top-[100px] right-[20px] md:right-[100px] w-[200px] md:w-[350px] h-[200px] md:h-[350px] bg-[#cd7fea] opacity-[0.05] rounded-full blur-[100px]"></div>
       <div className="absolute bottom-[100px] left-[20px] md:left-[100px] w-[180px] md:w-[300px] h-[180px] md:h-[300px] bg-[#6e2682] opacity-[0.05] rounded-full blur-[80px]"></div>
-      
+
       <div className="relative z-10 max-w-[900px] mx-auto">
         {/* Título */}
-        <div className="text-center mb-[50px] md:mb-[80px]">
+        <div className="text-center mb-[40px] md:mb-[60px]">
           <div className="inline-block bg-gradient-to-r from-[#f6eafd] to-[#fdf5ff] border-2 border-[#cd7fea] rounded-full px-[20px] md:px-[28px] py-[10px] md:py-[12px] mb-4 md:mb-6">
             <p className="font-['Montserrat'] font-bold text-[#cd7fea] text-[12px] md:text-[14px] tracking-wider uppercase">
               Preguntas Frecuentes
             </p>
           </div>
         </div>
-        
+
         {/* Acordeones */}
         <div className="space-y-3 md:space-y-4">
           {faqs.map((faq, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-white border-2 border-[#cd7fea] rounded-[12px] md:rounded-[16px] overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl"
             >
               <button
@@ -712,15 +712,15 @@ function FAQSection() {
                 <h3 className="font-['Montserrat'] font-bold text-[#6e2682] text-[16px] md:text-[21px] leading-[1.3]">
                   {faq.question}
                 </h3>
-                
+
                 <div className={`flex-shrink-0 w-[30px] md:w-[34px] h-[30px] md:h-[34px] rounded-full bg-gradient-to-br from-[#cd7fea] to-[#b968d1] flex items-center justify-center transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}>
                   <svg className="w-[15px] md:w-[17px] h-[15px] md:h-[17px]" fill="none" viewBox="0 0 16 16">
-                    <path d="M4 6L8 10L12 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M4 6L8 10L12 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
               </button>
-              
-              <div 
+
+              <div
                 className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}
               >
                 <div className="px-[20px] md:px-[30px] pb-[20px] md:pb-[26px] pt-[8px] md:pt-[10px] bg-gradient-to-r from-[#f6eafd] to-transparent border-t-2 border-[#e1b4f3]">
@@ -732,9 +732,9 @@ function FAQSection() {
             </div>
           ))}
         </div>
-        
+
         {/* CTA adicional */}
-        <div className="text-center mt-[40px] md:mt-[60px] px-4">
+        <div className="text-center mt-[35px] md:mt-[50px] px-4">
           <p className="font-['Montserrat'] text-[#6e2682] text-[16px] md:text-[18px] mb-5 md:mb-6">
             ¿Tenés más dudas? Estamos para ayudarte
           </p>
@@ -750,15 +750,15 @@ function FAQSection() {
 // Final Pricing CTA Section
 function FinalPricingSection() {
   return (
-    <div className="relative py-[80px] md:py-[140px] px-[20px] md:px-[109px] min-h-[500px] md:min-h-[750px] flex items-center justify-center md:justify-end overflow-hidden">
+    <div className="relative py-[60px] md:py-[100px] px-[20px] md:px-[109px] min-h-[500px] md:min-h-[650px] flex items-center justify-center md:justify-end overflow-hidden">
       <div className="absolute inset-0 pointer-events-none opacity-35 bg-gradient-to-br from-gray-100 via-gray-200 to-gray-100"></div>
-      
+
       {/* Overlay para mejor contraste */}
       <div className="absolute inset-0 bg-gradient-to-r from-white/50 via-white/30 to-transparent"></div>
-      
+
       {/* Círculos decorativos */}
       <div className="absolute top-[50px] md:top-[100px] right-[20px] md:right-[50px] w-[200px] md:w-[400px] h-[200px] md:h-[400px] bg-[#cd7fea] opacity-[0.08] rounded-full blur-[120px]"></div>
-      
+
       <div className="relative z-10 w-full max-w-[700px]">
         {/* Logo RTFIT + 35 Fuerza Sin Impacto */}
         <div className="mb-[30px] md:mb-[50px] flex justify-center md:justify-start">
@@ -766,16 +766,16 @@ function FinalPricingSection() {
             <Logos />
           </div>
         </div>
-        
-        <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[28px] md:text-[42px] mb-[40px] md:mb-[70px] text-center md:text-left">
+
+        <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[28px] md:text-[42px] mb-[30px] md:mb-[50px] text-center md:text-left text-balance">
           Inscribíte ahora
         </h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px] md:gap-[30px]">
           {/* Card Pesos Argentinos */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-[#cd7fea] to-[#b968d1] opacity-15 blur-lg rounded-[16px] group-hover:opacity-25 transition-opacity"></div>
-            
+
             <div className="relative bg-white border-4 border-[#cd7fea] rounded-[16px] p-[28px] md:p-[32px] flex flex-col items-center gap-[22px] md:gap-[26px] shadow-xl hover:shadow-2xl transition-all duration-300">
               <div className="text-center">
                 <div className="inline-block bg-gradient-to-r from-[#f6eafd] to-[#fdf5ff] border-2 border-[#cd7fea] rounded-full px-[18px] py-[7px] mb-4">
@@ -783,31 +783,31 @@ function FinalPricingSection() {
                     Argentina
                   </p>
                 </div>
-                
-                <p className="font-['Integral_CF'] text-[#cd7fea] text-[34px] md:text-[38px] leading-[1] mb-2 md:mb-3">
+
+                <p className="font-['Integral_CF'] text-[#cd7fea] text-[34px] md:text-[38px] leading-[1] mb-2 md:mb-3 whitespace-nowrap">
                   $73.690
                 </p>
                 <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[13px] md:text-[15px] uppercase mb-2">
                   Pesos Argentinos
                 </p>
               </div>
-              
+
               <div className="bg-[#f6eafd] rounded-[12px] px-[20px] py-[14px] w-full">
                 <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[15px] md:text-[16px] text-center leading-[1.4]">
                   3 cuotas sin interés<br />de $24.563
                 </p>
               </div>
-              
+
               <button className="bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[20px] py-[18px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[20px] w-full shadow-xl hover:shadow-2xl hover:scale-[1.03] transform">
                 ¡LO QUIERO!
               </button>
             </div>
           </div>
-          
+
           {/* Card Exterior */}
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-[#cd7fea] to-[#b968d1] opacity-15 blur-lg rounded-[16px] group-hover:opacity-25 transition-opacity"></div>
-            
+
             <div className="relative bg-white border-4 border-[#cd7fea] rounded-[16px] p-[28px] md:p-[32px] flex flex-col items-center gap-[22px] md:gap-[26px] shadow-xl hover:shadow-2xl transition-all duration-300">
               <div className="text-center">
                 <div className="inline-block bg-gradient-to-r from-[#f6eafd] to-[#fdf5ff] border-2 border-[#cd7fea] rounded-full px-[18px] py-[7px] mb-4">
@@ -815,28 +815,28 @@ function FinalPricingSection() {
                     Exterior
                   </p>
                 </div>
-                
-                <p className="font-['Integral_CF'] text-[#cd7fea] text-[34px] md:text-[38px] leading-[1] mb-2 md:mb-3">
+
+                <p className="font-['Integral_CF'] text-[#cd7fea] text-[34px] md:text-[38px] leading-[1] mb-2 md:mb-3 whitespace-nowrap">
                   U$D 60
                 </p>
                 <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[13px] md:text-[15px] uppercase mb-2">
                   Si estás en el exterior
                 </p>
               </div>
-              
+
               <div className="h-[68px] flex items-center">
                 <p className="font-['Montserrat'] text-[#6e2682] text-[15px] md:text-[16px] opacity-60 text-center">
                   Pago único
                 </p>
               </div>
-              
+
               <button className="bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[20px] py-[18px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[20px] w-full shadow-xl hover:shadow-2xl hover:scale-[1.03] transform">
                 ¡LO QUIERO!
               </button>
             </div>
           </div>
         </div>
-        
+
         <p className="font-['Montserrat'] text-[#6e2682] text-[14px] md:text-[15px] text-center mt-[20px] md:mt-[30px] opacity-70">
           Acceso inmediato al programa después del pago
         </p>
@@ -849,7 +849,7 @@ function FinalPricingSection() {
 export default function App() {
   return (
     <div className="bg-white min-h-screen">
-      <Header />
+
       <HeroSection />
       <TestimonialsSection />
       <PricingSection />
