@@ -191,4 +191,19 @@
   .animate-float {
     animation: float 3s ease-in-out infinite;
   }
+
+  @keyframes skeleton-shimmer {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
+
+  .skeleton {
+    background: linear-gradient(110deg, #e9e9ee 8%, #f6f6f8 18%, #e9e9ee 33%);
+    background-size: 200% 100%;
+    animation: skeleton-shimmer 1.6s ease-in-out infinite;
+  }
 }

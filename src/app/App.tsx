@@ -76,7 +76,7 @@ function HeroSection() {
         {/* Headline Text - Mejorada jerarquía */}
         <div className="text-center mb-[25px] md:mb-[40px] w-full">
           <h1 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[28px] md:text-[62px] leading-[1.15] mb-4 md:mb-6 px-2 text-balance">
-            El método +35 para volver a sentirte fuerte y cómoda con tu cuerpo
+            El método secreto para mujeres de +35 años para volver a sentirte joven y bellas con su cuerpo
           </h1>
 
           {/* Prueba Social - Badge destacado */}
@@ -102,7 +102,7 @@ function HeroSection() {
               SIN impacto, cuidando tus articulaciones
             </p>
             <p className="font-['Montserrat'] font-semibold text-[#6e2682] text-[16px] md:text-[24px] leading-[1.4] text-balance">
-              En 4 Semanas Con 20 Minutos al Día
+              En 4 semanas · 20 minutos por día · sin dietas restrictivas · fuerza sin impacto
             </p>
           </div>
         </div>
@@ -123,7 +123,7 @@ function HeroSection() {
           </p>
 
           <button className="bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[32px] md:px-[70px] py-[18px] md:py-[26px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[24px] shadow-2xl hover:shadow-[0_20px_60px_rgba(205,127,234,0.5)] hover:scale-[1.05] transform w-full md:w-auto">
-            Quiero empezar sin exigirme
+            Quiero entrenar sin exigirme
           </button>
         </div>
       </div>
@@ -273,9 +273,11 @@ function TestimonialsSection() {
                           <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
                         </svg>
                       </div>
-                      <div className="aspect-[3/4] bg-gradient-to-br from-gray-200 to-gray-300 rounded-[12px] md:rounded-[20px] flex items-center justify-center border-2 border-[#e1b4f3] overflow-hidden">
-                        <p className="font-['Montserrat'] text-gray-500 text-[14px] md:text-[18px]">Imagen</p>
-                      </div>
+                      <div
+                        className="aspect-[3/4] rounded-[12px] md:rounded-[20px] border-2 border-[#e1b4f3] overflow-hidden skeleton"
+                        role="img"
+                        aria-label="Imagen antes"
+                      />
                     </div>
 
                     <div
@@ -291,9 +293,11 @@ function TestimonialsSection() {
                           <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
                         </svg>
                       </div>
-                      <div className="aspect-[3/4] bg-gradient-to-br from-gray-200 to-gray-300 rounded-[12px] md:rounded-[20px] flex items-center justify-center border-2 md:border-4 border-[#cd7fea] overflow-hidden">
-                        <p className="font-['Montserrat'] text-gray-500 text-[14px] md:text-[18px]">Imagen</p>
-                      </div>
+                      <div
+                        className="aspect-[3/4] rounded-[12px] md:rounded-[20px] border-2 md:border-4 border-[#cd7fea] overflow-hidden skeleton"
+                        role="img"
+                        aria-label="Imagen después"
+                      />
                     </div>
                   </div>
 
@@ -343,9 +347,11 @@ function TestimonialsSection() {
             </div>
 
             {/* Imagen */}
-            <div className="aspect-[3/4] bg-gradient-to-br from-gray-200 to-gray-300 rounded-[20px] flex items-center justify-center border-4 border-[#cd7fea] overflow-hidden shadow-2xl">
-              <p className="font-['Montserrat'] text-gray-500 text-[20px] font-semibold">Imagen Ampliada</p>
-            </div>
+            <div
+              className="aspect-[3/4] rounded-[20px] border-4 border-[#cd7fea] overflow-hidden shadow-2xl skeleton"
+              role="img"
+              aria-label="Imagen ampliada"
+            />
 
             <p className="font-['Montserrat'] text-white text-center mt-5 text-[14px] opacity-90 leading-[1.5]">
               Toca fuera de la imagen para cerrar
@@ -539,11 +545,8 @@ function AboutSection() {
             <div className="absolute inset-0 bg-gradient-to-br from-[#cd7fea] to-[#b968d1] opacity-15 blur-2xl rounded-[30px] scale-[1.05]"></div>
 
             {/* Contenedor de la imagen principal - LISTO PARA TU IMAGEN */}
-            <div className="relative bg-white border-[4px] md:border-[6px] border-[#cd7fea] rounded-[20px] md:rounded-[30px] overflow-hidden shadow-2xl min-h-[400px] md:min-h-[600px] flex items-center justify-center">
-              {/* AQUÍ VA TU IMAGEN */}
-              <p className="font-['Montserrat'] text-[#cd7fea] text-[18px] md:text-[24px] font-semibold opacity-60">
-                Espacio para tu imagen
-              </p>
+            <div className="relative bg-white border-[4px] md:border-[6px] border-[#cd7fea] rounded-[20px] md:rounded-[30px] overflow-hidden shadow-2xl min-h-[400px] md:min-h-[600px]">
+              <div className="absolute inset-0 skeleton" role="img" aria-label="Espacio para tu imagen" />
             </div>
 
             {/* Círculos decorativos sutiles */}
@@ -675,6 +678,10 @@ function FAQSection() {
     {
       question: "¿Para quién está orientado?",
       answer: "Para todas las personas que quieran ganar fuerza, salud, resistencia. Apto para embarazadas."
+    },
+    {
+      question: "¿Es una dieta restrictiva?",
+      answer: "No. El programa incluye una guía nutricional de acompañamiento, sin dietas restrictivas ni prohibiciones extremas."
     },
     {
       question: "¿Cómo son los ejercicios?",
