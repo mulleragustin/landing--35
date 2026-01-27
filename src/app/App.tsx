@@ -53,7 +53,9 @@ function Header() {
           </svg>
         </div>
         <div className="bg-[#002216] px-[12px] md:px-[16px] py-[10px] md:py-[14px] rounded-[4px]">
-          <p className="font-['Montserrat'] font-bold text-[12px] md:text-[16px] text-white">MI CUENTA</p>
+          <p className="font-['Montserrat'] font-bold text-[12px] md:text-[16px] text-white">
+            MI CUENTA
+          </p>
         </div>
       </div>
     </div>
@@ -162,7 +164,9 @@ function HeroSection() {
           <div className="absolute inset-0 bg-gradient-to-br from-[#cd7fea] to-[#b968d1] opacity-20 blur-2xl rounded-[20px] scale-[1.03]"></div>
 
           <div className="relative aspect-video bg-gradient-to-br from-[#1a1a1a] to-[#000000] border-[3px] md:border-[6px] border-[#cd7fea] rounded-[10px] md:rounded-[20px] flex items-center justify-center shadow-2xl overflow-hidden">
-            <p className="font-['Integral_CF'] text-white text-[28px] md:text-[64px] opacity-80">VSL</p>
+            <p className="font-['Integral_CF'] text-white text-[28px] md:text-[64px] opacity-80">
+              VSL
+            </p>
           </div>
         </div>
 
@@ -183,7 +187,9 @@ function HeroSection() {
 
 // Testimonials Section
 function TestimonialsSection() {
-  const [selectedImage, setSelectedImage] = React.useState<{ url: string, label: string } | null>(null);
+  const [selectedImage, setSelectedImage] = React.useState<{ url: string; label: string } | null>(
+    null,
+  );
 
   // Componentes de flechas personalizadas
   const NextArrow = (props: any) => {
@@ -218,7 +224,12 @@ function TestimonialsSection() {
           viewBox="0 0 24 24"
           stroke="currentColor"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2.5}
+            d="M15 19l-7-7 7-7"
+          />
         </svg>
       </button>
     );
@@ -248,7 +259,8 @@ function TestimonialsSection() {
       initial: "C",
       quote: "Tenía poca energía, se sentía inflamada",
       resultTitle: "En 4 semanas con fuerza sin impacto:",
-      resultText: "se sintió más firme, más liviana, ganó fuerza y volvió a entrenar sin miedo a lesionarse.",
+      resultText:
+        "se sintió más firme, más liviana, ganó fuerza y volvió a entrenar sin miedo a lesionarse.",
     },
     {
       id: 2,
@@ -290,15 +302,27 @@ function TestimonialsSection() {
                   <div className="grid grid-cols-2 gap-[12px] md:gap-[30px] mb-[18px] md:mb-[30px]">
                     <div
                       className="relative md:cursor-default cursor-pointer active:scale-95 md:active:scale-100 transition-transform"
-                      onClick={() => setSelectedImage({ url: 'placeholder', label: 'ANTES' })}
+                      onClick={() => setSelectedImage({ url: "placeholder", label: "ANTES" })}
                     >
                       <div className="absolute top-[10px] md:top-[15px] left-[10px] md:left-[15px] bg-white border-2 border-[#6e2682] rounded-full px-[10px] md:px-[16px] py-[5px] md:py-[8px] z-10 pointer-events-none shadow-lg">
-                        <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[11px] md:text-[14px]">ANTES</p>
+                        <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[11px] md:text-[14px]">
+                          ANTES
+                        </p>
                       </div>
                       {/* Icono de zoom solo en mobile */}
                       <div className="md:hidden absolute bottom-[10px] right-[10px] bg-white/95 rounded-full p-[7px] z-10 pointer-events-none shadow-md">
-                        <svg className="w-[16px] h-[16px]" fill="none" viewBox="0 0 24 24" stroke="#6e2682" strokeWidth="2.5">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                        <svg
+                          className="w-[16px] h-[16px]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="#6e2682"
+                          strokeWidth="2.5"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"
+                          />
                         </svg>
                       </div>
                       <div
@@ -310,15 +334,27 @@ function TestimonialsSection() {
 
                     <div
                       className="relative md:cursor-default cursor-pointer active:scale-95 md:active:scale-100 transition-transform"
-                      onClick={() => setSelectedImage({ url: 'placeholder', label: 'DESPUÉS' })}
+                      onClick={() => setSelectedImage({ url: "placeholder", label: "DESPUÉS" })}
                     >
                       <div className="absolute top-[10px] md:top-[15px] left-[10px] md:left-[15px] bg-gradient-to-br from-[#cd7fea] to-[#b968d1] rounded-full px-[10px] md:px-[16px] py-[5px] md:py-[8px] z-10 pointer-events-none shadow-lg">
-                        <p className="font-['Montserrat'] font-bold text-white text-[11px] md:text-[14px]">DESPUÉS</p>
+                        <p className="font-['Montserrat'] font-bold text-white text-[11px] md:text-[14px]">
+                          DESPUÉS
+                        </p>
                       </div>
                       {/* Icono de zoom solo en mobile */}
                       <div className="md:hidden absolute bottom-[10px] right-[10px] bg-white/95 rounded-full p-[7px] z-10 pointer-events-none shadow-md">
-                        <svg className="w-[16px] h-[16px]" fill="none" viewBox="0 0 24 24" stroke="#6e2682" strokeWidth="2.5">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" />
+                        <svg
+                          className="w-[16px] h-[16px]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="#6e2682"
+                          strokeWidth="2.5"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"
+                          />
                         </svg>
                       </div>
                       <div
@@ -361,15 +397,25 @@ function TestimonialsSection() {
             className="absolute top-5 right-5 w-[44px] h-[44px] bg-white/15 hover:bg-white/25 rounded-full flex items-center justify-center transition-all backdrop-blur-sm"
             onClick={() => setSelectedImage(null)}
           >
-            <svg className="w-[24px] h-[24px]" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth="2.5">
+            <svg
+              className="w-[24px] h-[24px]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="white"
+              strokeWidth="2.5"
+            >
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
 
           <div className="w-full max-w-[500px]" onClick={(e) => e.stopPropagation()}>
             {/* Badge label */}
-            <div className={`mb-5 inline-block ${selectedImage.label === 'DESPUÉS' ? 'bg-gradient-to-br from-[#cd7fea] to-[#b968d1]' : 'bg-white'} rounded-full px-[18px] py-[9px] shadow-xl border-2 ${selectedImage.label === 'DESPUÉS' ? 'border-white/20' : 'border-[#cd7fea]'}`}>
-              <p className={`font-['Montserrat'] font-bold ${selectedImage.label === 'DESPUÉS' ? 'text-white' : 'text-[#6e2682]'} text-[15px]`}>
+            <div
+              className={`mb-5 inline-block ${selectedImage.label === "DESPUÉS" ? "bg-gradient-to-br from-[#cd7fea] to-[#b968d1]" : "bg-white"} rounded-full px-[18px] py-[9px] shadow-xl border-2 ${selectedImage.label === "DESPUÉS" ? "border-white/20" : "border-[#cd7fea]"}`}
+            >
+              <p
+                className={`font-['Montserrat'] font-bold ${selectedImage.label === "DESPUÉS" ? "text-white" : "text-[#6e2682]"} text-[15px]`}
+              >
                 {selectedImage.label}
               </p>
             </div>
@@ -513,7 +559,9 @@ function PricingSection() {
 
                 <div className="flex items-start gap-3 md:gap-4">
                   <CheckIcon />
-                  <p className="leading-[1.5]">Movilidad y estiramientos para rodillas, caderas y espalda</p>
+                  <p className="leading-[1.5]">
+                    Movilidad y estiramientos para rodillas, caderas y espalda
+                  </p>
                 </div>
 
                 <div className="flex items-start gap-3 md:gap-4">
@@ -523,7 +571,9 @@ function PricingSection() {
 
                 <div className="flex items-start gap-3 md:gap-4">
                   <CheckIcon />
-                  <p className="leading-[1.5]">Seguimiento y comunidad para sostener la constancia</p>
+                  <p className="leading-[1.5]">
+                    Seguimiento y comunidad para sostener la constancia
+                  </p>
                 </div>
 
                 <div className="flex items-start gap-3 md:gap-4">
@@ -559,7 +609,13 @@ function PricingSection() {
                 <div className="bg-white border-2 border-[#cd7fea] rounded-full px-[16px] md:px-[32px] py-[10px] md:py-[16px] shadow-lg">
                   <div className="flex items-center gap-2 md:gap-4">
                     <div className="bg-gradient-to-br from-[#cd7fea] to-[#b968d1] rounded-full w-[32px] md:w-[50px] h-[32px] md:h-[50px] flex items-center justify-center flex-shrink-0">
-                      <svg className="w-[16px] md:w-[24px] h-[16px] md:h-[24px]" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth="3">
+                      <svg
+                        className="w-[16px] md:w-[24px] h-[16px] md:h-[24px]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="white"
+                        strokeWidth="3"
+                      >
                         <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
@@ -576,9 +632,10 @@ function PricingSection() {
             </h3>
 
             <p className="font-['Montserrat'] text-[#6e2682] text-[16px] md:text-[18px] leading-[1.8] text-center lg:text-left mb-[25px] md:mb-[30px] text-balance">
-              Porque quiero que cualquier mujer +35 pueda acceder a un plan que sí sostengan en el tiempo,
-              <span className="font-bold text-[#cd7fea]"> sin gastar fortunas en gimnasios</span>, sin rutinas imposibles
-              y sin soluciones que duran unas semanas y después abandonan.
+              Porque quiero que cualquier mujer +35 pueda acceder a un plan que sí sostengan en el
+              tiempo,
+              <span className="font-bold text-[#cd7fea]"> sin gastar fortunas en gimnasios</span>,
+              sin rutinas imposibles y sin soluciones que duran unas semanas y después abandonan.
             </p>
 
             {/* Precio destacado con círculo */}
@@ -588,9 +645,15 @@ function PricingSection() {
                 <div className="absolute inset-0 bg-[#cd7fea] opacity-20 blur-2xl rounded-full scale-110"></div>
 
                 <div className="relative bg-gradient-to-br from-[#cd7fea] via-[#b968d1] to-[#a557bd] rounded-full w-[200px] md:w-[240px] h-[200px] md:h-[240px] flex flex-col items-center justify-center shadow-2xl animate-float">
-                  <p className="font-['Montserrat'] text-white text-[12px] md:text-[14px] font-bold mb-1 tracking-wider">MENOS DE</p>
-                  <p className="font-['Integral_CF'] text-white text-[42px] md:text-[52px] leading-[1]">$2.500</p>
-                  <p className="font-['Montserrat'] text-white text-[18px] md:text-[22px] font-bold">EL DÍA</p>
+                  <p className="font-['Montserrat'] text-white text-[12px] md:text-[14px] font-bold mb-1 tracking-wider">
+                    MENOS DE
+                  </p>
+                  <p className="font-['Integral_CF'] text-white text-[42px] md:text-[52px] leading-[1]">
+                    $2.500
+                  </p>
+                  <p className="font-['Montserrat'] text-white text-[18px] md:text-[22px] font-bold">
+                    EL DÍA
+                  </p>
                 </div>
               </div>
             </div>
@@ -660,7 +723,8 @@ function AboutSection() {
               {/* Highlight secundario */}
               <div className="bg-white border-2 border-[#cd7fea] p-[16px] md:p-[20px] rounded-[12px] shadow-lg">
                 <p className="font-['Montserrat'] font-semibold text-[#6e2682] text-[16px] md:text-[18px] leading-[1.6] text-center lg:text-left text-balance">
-                  Este método está pensado para mujeres +35 con poco tiempo y ganas de resultados reales.
+                  Este método está pensado para mujeres +35 con poco tiempo y ganas de resultados
+                  reales.
                 </p>
               </div>
             </div>
@@ -668,18 +732,30 @@ function AboutSection() {
             {/* Stats o datos destacados */}
             <div className="grid grid-cols-3 gap-3 md:gap-4 mb-5 md:mb-7">
               <div className="text-center bg-gradient-to-br from-[#f6eafd] to-white border-2 border-[#e1b4f3] rounded-[12px] p-[16px] md:p-[20px]">
-                <p className="font-['Integral_CF'] text-[#cd7fea] text-[26px] md:text-[32px] leading-[1] mb-1">20'</p>
-                <p className="font-['Montserrat'] text-[#6e2682] text-[12px] md:text-[13px] font-semibold">por clase</p>
+                <p className="font-['Integral_CF'] text-[#cd7fea] text-[26px] md:text-[32px] leading-[1] mb-1">
+                  20'
+                </p>
+                <p className="font-['Montserrat'] text-[#6e2682] text-[12px] md:text-[13px] font-semibold">
+                  por clase
+                </p>
               </div>
 
               <div className="text-center bg-gradient-to-br from-[#f6eafd] to-white border-2 border-[#e1b4f3] rounded-[12px] p-[16px] md:p-[20px]">
-                <p className="font-['Integral_CF'] text-[#cd7fea] text-[26px] md:text-[32px] leading-[1] mb-1">4x</p>
-                <p className="font-['Montserrat'] text-[#6e2682] text-[12px] md:text-[13px] font-semibold">semana</p>
+                <p className="font-['Integral_CF'] text-[#cd7fea] text-[26px] md:text-[32px] leading-[1] mb-1">
+                  4x
+                </p>
+                <p className="font-['Montserrat'] text-[#6e2682] text-[12px] md:text-[13px] font-semibold">
+                  semana
+                </p>
               </div>
 
               <div className="text-center bg-gradient-to-br from-[#f6eafd] to-white border-2 border-[#e1b4f3] rounded-[12px] p-[16px] md:p-[20px]">
-                <p className="font-['Integral_CF'] text-[#cd7fea] text-[26px] md:text-[32px] leading-[1] mb-1">0</p>
-                <p className="font-['Montserrat'] text-[#6e2682] text-[12px] md:text-[13px] font-semibold">impacto</p>
+                <p className="font-['Integral_CF'] text-[#cd7fea] text-[26px] md:text-[32px] leading-[1] mb-1">
+                  0
+                </p>
+                <p className="font-['Montserrat'] text-[#6e2682] text-[12px] md:text-[13px] font-semibold">
+                  impacto
+                </p>
               </div>
             </div>
 
@@ -743,28 +819,31 @@ function FAQSection() {
   const faqs = [
     {
       question: "¿Cuánto tiempo?",
-      answer: "4 clases por semana."
+      answer: "4 clases por semana.",
     },
     {
       question: "¿Cuánto tiempo por clase?",
-      answer: "Clases de 20' NonStop full body sin salto."
+      answer: "Clases de 20' NonStop full body sin salto.",
     },
     {
       question: "¿Cuáles son los elementos?",
-      answer: "Colchoneta, mancuerna, tobillera y deslizadores."
+      answer: "Colchoneta, mancuerna, tobillera y deslizadores.",
     },
     {
       question: "¿Para quién está orientado?",
-      answer: "Para todas las personas que quieran ganar fuerza, salud, resistencia. Apto para embarazadas."
+      answer:
+        "Para todas las personas que quieran ganar fuerza, salud, resistencia. Apto para embarazadas.",
     },
     {
       question: "¿Es una dieta restrictiva?",
-      answer: "No. El programa incluye una guía nutricional de acompañamiento, sin dietas restrictivas ni prohibiciones extremas."
+      answer:
+        "No. El programa incluye una guía nutricional de acompañamiento, sin dietas restrictivas ni prohibiciones extremas.",
     },
     {
       question: "¿Cómo son los ejercicios?",
-      answer: "Clases guiadas, cuido tu técnica, resultados reales, trabajo de fuerza a conciencia sin impacto. Las clases son todas diferentes."
-    }
+      answer:
+        "Clases guiadas, cuido tu técnica, resultados reales, trabajo de fuerza a conciencia sin impacto. Las clases son todas diferentes.",
+    },
   ];
 
   return (
@@ -798,15 +877,27 @@ function FAQSection() {
                   {faq.question}
                 </h3>
 
-                <div className={`flex-shrink-0 w-[30px] md:w-[34px] h-[30px] md:h-[34px] rounded-full bg-gradient-to-br from-[#cd7fea] to-[#b968d1] flex items-center justify-center transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}>
-                  <svg className="w-[15px] md:w-[17px] h-[15px] md:h-[17px]" fill="none" viewBox="0 0 16 16">
-                    <path d="M4 6L8 10L12 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <div
+                  className={`flex-shrink-0 w-[30px] md:w-[34px] h-[30px] md:h-[34px] rounded-full bg-gradient-to-br from-[#cd7fea] to-[#b968d1] flex items-center justify-center transition-transform duration-300 ${openIndex === index ? "rotate-180" : ""}`}
+                >
+                  <svg
+                    className="w-[15px] md:w-[17px] h-[15px] md:h-[17px]"
+                    fill="none"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4 6L8 10L12 6"
+                      stroke="white"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </div>
               </button>
 
               <div
-                className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}
+                className={`overflow-hidden transition-all duration-300 ${openIndex === index ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}
               >
                 <div className="px-[20px] md:px-[30px] py-[18px] md:py-[24px] bg-[#f6eafd] border-t-2 border-[#e1b4f3]">
                   <p className="font-['Montserrat'] text-[#6e2682] text-[15px] md:text-[18px] leading-[1.7]">
@@ -879,7 +970,9 @@ function FinalPricingSection() {
 
               <div className="bg-[#f6eafd] rounded-[12px] px-[20px] py-[14px] w-full">
                 <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[15px] md:text-[16px] text-center leading-[1.4]">
-                  3 cuotas sin interés<br />de $24.563
+                  3 cuotas sin interés
+                  <br />
+                  de $24.563
                 </p>
               </div>
 
@@ -942,7 +1035,7 @@ function FooterSection() {
           rel="noreferrer"
           className="flex items-center gap-2 font-['Montserrat'] tracking-wide text-white/70 hover:text-white/90 transition-colors"
         >
-          <span>Design & developed by</span>
+          <span className="font-['Arial']">Design & developed by</span>
           <img src={tinyIcon} alt="Tiny Studio" className="h-[16px] md:h-[18px] opacity-80" />
         </a>
       </div>
@@ -954,7 +1047,6 @@ function FooterSection() {
 export default function App() {
   return (
     <div className="bg-white min-h-screen">
-
       <HeroSection />
       <TestimonialsSection />
       <TextTestimonialsSection />
