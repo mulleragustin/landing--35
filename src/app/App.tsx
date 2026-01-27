@@ -6,6 +6,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Logos from "@/imports/Logos";
+import rominaImage from "@/assets/foto-romina.jpg";
+import ctaVideo from "@/assets/bg +35 optimizado.mp4";
+import tinyIcon from "@/assets/Icon-tiny.svg";
 
 // Logo Component
 function Logo() {
@@ -59,6 +62,26 @@ function Header() {
 
 // Hero Section
 function HeroSection() {
+  const hookOptions = [
+    {
+      id: "hook-1",
+      label: "Hook 1",
+      text: "El método secreto para mujeres de +35 años para volver a sentirte joven y bellas con su cuerpo",
+    },
+    {
+      id: "hook-2",
+      label: "Hook 2",
+      text: "Cómo cambiar tu cuerpo después de los 35 usando fuerza sin impacto",
+      subtext: "(20 minutos por día, sin dietas restrictivas)",
+    },
+    {
+      id: "hook-3",
+      label: "Hook 3",
+      text: "El sistema de fuerza sin impacto que permite a mujeres +35 verse más firmes sin dolor ni exigencia extrema",
+    },
+  ];
+  const [hookIndex, setHookIndex] = React.useState(0);
+
   return (
     <div className="relative w-full bg-gradient-to-b from-white via-[#fdf5ff] to-white py-[30px] md:py-[50px] px-[20px] md:px-[109px]">
       {/* Elementos decorativos de fondo */}
@@ -76,8 +99,35 @@ function HeroSection() {
         {/* Headline Text - Mejorada jerarquía */}
         <div className="text-center mb-[25px] md:mb-[40px] w-full">
           <h1 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[28px] md:text-[62px] leading-[1.15] mb-4 md:mb-6 px-2 text-balance">
-            El método secreto para mujeres de +35 años para volver a sentirte joven y bellas con su cuerpo
+            {hookOptions[hookIndex]?.text ?? hookOptions[0].text}
           </h1>
+          {hookOptions[hookIndex]?.subtext && (
+            <p className="font-['Montserrat'] font-semibold text-[#6e2682] text-[14px] md:text-[20px] leading-[1.4] mb-4 md:mb-6 text-balance">
+              {hookOptions[hookIndex]?.subtext}
+            </p>
+          )}
+
+          <div
+            className="flex flex-wrap justify-center gap-2 md:gap-3 mb-4 md:mb-6"
+            role="group"
+            aria-label="Selector de hook"
+          >
+            {hookOptions.map((hook, index) => (
+              <button
+                key={hook.id}
+                type="button"
+                onClick={() => setHookIndex(index)}
+                aria-pressed={hookIndex === index}
+                className={`px-[14px] md:px-[18px] py-[8px] md:py-[10px] rounded-full border font-['Montserrat'] text-[12px] md:text-[14px] font-semibold transition-all duration-200 ${
+                  hookIndex === index
+                    ? "bg-[#6e2682] text-white border-[#6e2682] shadow-md"
+                    : "bg-white text-[#6e2682] border-[#cd7fea] hover:bg-[#f6e9fb]"
+                }`}
+              >
+                {hook.label}
+              </button>
+            ))}
+          </div>
 
           {/* Prueba Social - Badge destacado */}
           <div className="inline-flex items-center gap-2 md:gap-3 bg-gradient-to-r from-[#cd7fea] to-[#b968d1] rounded-full px-[16px] md:px-[32px] py-[12px] md:py-[16px] mb-4 md:mb-6 shadow-lg max-w-full">
@@ -236,28 +286,6 @@ function TestimonialsSection() {
             {testimonials.map((testimonial) => (
               <div key={testimonial.id} className="px-2 md:px-4">
                 <div className="bg-white rounded-[20px] md:rounded-[30px] p-[20px] md:p-[50px] border-2 md:border-4 border-[#cd7fea] shadow-xl flex flex-col">
-                  <div className="flex items-center gap-2 md:gap-4 mb-4 md:mb-6">
-                    <div className="w-[48px] md:w-[60px] h-[48px] md:h-[60px] rounded-full bg-gradient-to-br from-[#cd7fea] to-[#b968d1] flex items-center justify-center flex-shrink-0">
-                      <span className="font-['Integral_CF'] text-white text-[20px] md:text-[24px]">{testimonial.initial}</span>
-                    </div>
-                    <div>
-                      <h3 className="font-['Montserrat'] font-bold text-[#6e2682] text-[18px] md:text-[26px] leading-[1.2]">
-                        {testimonial.name}
-                      </h3>
-                      {testimonial.subtitle && (
-                        <p className="font-['Montserrat'] text-[#6e2682] text-[14px] md:text-[16px] leading-[1.3]">
-                          {testimonial.subtitle}
-                        </p>
-                      )}
-                    </div>
-                  </div>
-
-                  <div className="bg-gradient-to-r from-[#f6eafd] to-transparent border-l-4 border-[#cd7fea] p-[14px] md:p-[20px] rounded-[8px] mb-[20px] md:mb-[30px]">
-                    <p className="font-['Montserrat'] text-[#6e2682] text-[14px] md:text-[18px] leading-[1.6] italic">
-                      "{testimonial.quote}"
-                    </p>
-                  </div>
-
                   {/* Imágenes antes/después con aspect ratio fijo */}
                   <div className="grid grid-cols-2 gap-[12px] md:gap-[30px] mb-[18px] md:mb-[30px]">
                     <div
@@ -359,6 +387,54 @@ function TestimonialsSection() {
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+// Text Testimonials Section
+function TextTestimonialsSection() {
+  const textTestimonials = [
+    {
+      id: 1,
+      text: "Tenía poca energía y se sentía inflamada. En 4 semanas con fuerza sin impacto se sintió más firme, más liviana y volvió a entrenar sin miedo a lesionarse.",
+    },
+    {
+      id: 2,
+      text: "Probó rutinas intensas y solo conseguía cansancio y frustración. Con el plan sin impacto volvió a sentirse constante y notó cambios reales en su cuerpo.",
+    },
+    {
+      id: 3,
+      text: "Me costaba sostener rutinas largas. Con 20 minutos por día pude mantenerme constante y noté cambios sin exigirme de más.",
+    },
+    // Agrega más testimonios aquí
+  ];
+
+  return (
+    <div className="relative py-[30px] md:py-[70px] px-[20px] md:px-[109px] bg-white">
+      {/* Elementos decorativos de fondo */}
+      <div className="absolute top-[80px] left-[20px] md:left-[80px] w-[180px] md:w-[260px] h-[180px] md:h-[260px] bg-[#cd7fea] opacity-[0.06] rounded-full blur-[90px]"></div>
+      <div className="absolute bottom-[80px] right-[20px] md:right-[80px] w-[180px] md:w-[260px] h-[180px] md:h-[260px] bg-[#6e2682] opacity-[0.06] rounded-full blur-[90px]"></div>
+
+      <div className="relative z-10 max-w-[1200px] mx-auto">
+        <div className="text-center mb-[25px] md:mb-[45px]">
+          <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[24px] md:text-[44px] text-balance">
+            Lo que dicen quienes ya entrenaron
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[16px] md:gap-[24px]">
+          {textTestimonials.map((testimonial) => (
+            <div
+              key={testimonial.id}
+              className="bg-white rounded-[16px] md:rounded-[20px] p-[18px] md:p-[26px] border-2 border-[#cd7fea] shadow-lg flex flex-col gap-[14px] md:gap-[18px]"
+            >
+              <p className="font-['Montserrat'] text-[#6e2682] text-[14px] md:text-[16px] leading-[1.7] italic">
+                "{testimonial.text}"
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
@@ -541,17 +617,15 @@ function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[50px] lg:gap-[100px] items-center">
           {/* Lado izquierdo - Espacio para imagen */}
           <div className="relative">
-            {/* Sombra decorativa de fondo */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#cd7fea] to-[#b968d1] opacity-15 blur-2xl rounded-[30px] scale-[1.05]"></div>
-
             {/* Contenedor de la imagen principal - LISTO PARA TU IMAGEN */}
-            <div className="relative bg-white border-[4px] md:border-[6px] border-[#cd7fea] rounded-[20px] md:rounded-[30px] overflow-hidden shadow-2xl min-h-[400px] md:min-h-[600px]">
-              <div className="absolute inset-0 skeleton" role="img" aria-label="Espacio para tu imagen" />
+            <div className="relative rounded-[20px] md:rounded-[30px] overflow-hidden shadow-2xl min-h-[400px] md:min-h-[600px]">
+              <img
+                src={rominaImage}
+                alt="Romina Traetta"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
-
-            {/* Círculos decorativos sutiles */}
-            <div className="absolute -bottom-[20px] -left-[20px] w-[100px] h-[100px] bg-[#cd7fea] opacity-20 rounded-full blur-xl"></div>
-            <div className="absolute -top-[15px] -left-[15px] w-[60px] h-[60px] bg-[#b968d1] opacity-25 rounded-full blur-lg"></div>
           </div>
 
           {/* Lado derecho - Contenido mejorado */}
@@ -625,17 +699,21 @@ function AboutSection() {
 // CTA Section
 function CTASection() {
   return (
-    <div className="relative py-[60px] md:py-[100px] px-[20px] md:px-[109px] overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none opacity-40 bg-gradient-to-br from-gray-100 via-gray-200 to-gray-100"></div>
-
-      {/* Overlay oscuro para mejor contraste */}
-
+    <div className="relative py-[60px] md:py-[100px] overflow-hidden min-h-[360px] md:min-h-[520px] lg:min-h-[600px]">
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src={ctaVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
 
       {/* Círculos decorativos */}
       <div className="absolute top-[50px] left-[20px] md:left-[100px] w-[200px] md:w-[350px] h-[200px] md:h-[350px] bg-[#cd7fea] opacity-[0.08] rounded-full blur-[100px]"></div>
       <div className="absolute bottom-[50px] right-[20px] md:right-[100px] w-[180px] md:w-[300px] h-[180px] md:h-[300px] bg-[#6e2682] opacity-[0.08] rounded-full blur-[80px]"></div>
 
-      <div className="relative z-10 max-w-[900px] mx-auto text-center">
+      <div className="relative z-10 max-w-[900px] mx-auto text-center px-[20px] md:px-[109px]">
         <div className="inline-block bg-white border-2 border-[#cd7fea] rounded-full px-[20px] md:px-[28px] py-[10px] md:py-[12px] mb-6 md:mb-8">
           <p className="font-['Montserrat'] font-bold text-[#cd7fea] text-[12px] md:text-[14px] tracking-wider uppercase">
             Tu Transformación Empieza Hoy
@@ -852,6 +930,26 @@ function FinalPricingSection() {
   );
 }
 
+// Footer Section
+function FooterSection() {
+  return (
+    <footer className="bg-[#1b1b1b] text-white/70 px-[20px] md:px-[109px] py-[18px] md:py-[22px]">
+      <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-3 md:gap-6 text-[12px] md:text-[14px]">
+        <p className="font-['Montserrat'] tracking-wide">RTFIT® 2026 | All Rights Reserved</p>
+        <a
+          href="https://tinystudioar.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center gap-2 font-['Montserrat'] tracking-wide text-white/70 hover:text-white/90 transition-colors"
+        >
+          <span>Design & developed by</span>
+          <img src={tinyIcon} alt="Tiny Studio" className="h-[16px] md:h-[18px] opacity-80" />
+        </a>
+      </div>
+    </footer>
+  );
+}
+
 // Main App Component
 export default function App() {
   return (
@@ -859,11 +957,13 @@ export default function App() {
 
       <HeroSection />
       <TestimonialsSection />
+      <TextTestimonialsSection />
       <PricingSection />
       <AboutSection />
       <FAQSection />
       <CTASection />
       <FinalPricingSection />
+      <FooterSection />
     </div>
   );
 }
