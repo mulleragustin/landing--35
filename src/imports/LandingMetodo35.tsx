@@ -84,7 +84,7 @@ function Header() {
 function Frame38() {
   return (
     <div className="absolute h-[126px] left-[3px] not-italic top-0 w-[566px] whitespace-pre-wrap">
-      <p className="absolute font-['Eixample_Dip:Bold',sans-serif] h-[35px] leading-[normal] left-0 text-[#cd7fea] text-[36px] top-0 w-[498px]">¿Cómo lo vamos a lograr?</p>
+      <p className="absolute font-['EB Garamond:Bold',sans-serif] h-[35px] leading-[normal] left-0 text-[#cd7fea] text-[36px] top-0 w-[498px]">¿Cómo lo vamos a lograr?</p>
       <p className="absolute font-['Montserrat:Regular',sans-serif] h-[65px] leading-[22px] left-0 text-[#6e2682] text-[16px] top-[61px] w-[566px]">El entrenamiento de fuerza sin impacto para cuidar tu cuerpo hará que quemes muchísimas calorías por clase, con la alimentación que te propone nuestra nutricionista, imposible no ver cambios.</p>
     </div>
   );
@@ -348,7 +348,7 @@ function Frame43() {
       <div className="absolute bottom-0 flex flex-col font-['Beloved_Script:Bold',sans-serif] justify-center leading-[0] left-[calc(50%-135.5px)] text-[60px] top-[45.89%] w-[271px]">
         <p className="leading-[normal] whitespace-pre-wrap">No te olvides</p>
       </div>
-      <p className="absolute font-['Eixample_Dip:Bold',sans-serif] h-[36px] leading-[normal] left-1/2 text-[36px] text-center top-0 translate-x-[-50%] w-[453px] whitespace-pre-wrap">¡Antes de comenzar!</p>
+      <p className="absolute font-['EB Garamond:Bold',sans-serif] h-[36px] leading-[normal] left-1/2 text-[36px] text-center top-0 translate-x-[-50%] w-[453px] whitespace-pre-wrap">¡Antes de comenzar!</p>
     </div>
   );
 }
@@ -375,7 +375,7 @@ function Frame44() {
   return (
     <div className="absolute h-[215px] left-0 top-0 w-[243px]">
       <Capa />
-      <div className="absolute font-['Eixample_Dip:Regular',sans-serif] h-[66px] leading-[1.209] left-1/2 not-italic text-[#cd7fea] text-[30px] text-center top-[calc(50%+41.5px)] translate-x-[-50%] w-[243px] whitespace-pre-wrap">
+      <div className="absolute font-['EB Garamond:Regular',sans-serif] h-[66px] leading-[1.209] left-1/2 not-italic text-[#cd7fea] text-[30px] text-center top-[calc(50%+41.5px)] translate-x-[-50%] w-[243px] whitespace-pre-wrap">
         <p className="mb-0">Chequeo</p>
         <p>{`médico previo `}</p>
       </div>
@@ -408,7 +408,7 @@ function Frame45() {
   return (
     <div className="absolute h-[212px] left-[355px] top-0 w-[205px]">
       <Capa1 />
-      <div className="absolute font-['Eixample_Dip:Regular',sans-serif] h-[63px] leading-[1.209] left-1/2 not-italic text-[#cd7fea] text-[30px] text-center top-[calc(50%+43px)] translate-x-[-50%] w-[205px] whitespace-pre-wrap">
+      <div className="absolute font-['EB Garamond:Regular',sans-serif] h-[63px] leading-[1.209] left-1/2 not-italic text-[#cd7fea] text-[30px] text-center top-[calc(50%+43px)] translate-x-[-50%] w-[205px] whitespace-pre-wrap">
         <p className="mb-0">Ropa y calzado cómodo</p>
         <p>&nbsp;</p>
       </div>
@@ -449,7 +449,7 @@ function Frame46() {
   return (
     <div className="absolute h-[219px] left-[616px] top-0 w-[361px]">
       <Capa2 />
-      <div className="absolute font-['Eixample_Dip:Regular',sans-serif] h-[65px] leading-[1.209] left-1/2 not-italic text-[#cd7fea] text-[0px] text-center top-[calc(50%+44.5px)] translate-x-[-50%] w-[361px] whitespace-pre-wrap">
+      <div className="absolute font-['EB Garamond:Regular',sans-serif] h-[65px] leading-[1.209] left-1/2 not-italic text-[#cd7fea] text-[0px] text-center top-[calc(50%+44.5px)] translate-x-[-50%] w-[361px] whitespace-pre-wrap">
         <p className="mb-0 text-[30px]">Hidratate</p>
         <p className="text-[24px]">(antes, durante y despues)</p>
       </div>
@@ -524,23 +524,23 @@ function Capa3() {
 function BarradDeProgreso() {
   return (
     <div className="absolute contents left-1/2 top-[75px] translate-x-[-50%]" data-name="Barrad de progreso">
-      <div className="absolute font-['Eixample_Dip:Regular',sans-serif] h-[52px] leading-[normal] left-[calc(50%-371px)] not-italic text-[#cd7fea] text-[24px] text-center top-[215px] translate-x-[-50%] w-[161px] whitespace-pre-wrap">
+      <div className="absolute font-['EB Garamond:Regular',sans-serif] h-[52px] leading-[normal] left-[calc(50%-371px)] not-italic text-[#cd7fea] text-[24px] text-center top-[215px] translate-x-[-50%] w-[161px] whitespace-pre-wrap">
         <p className="mb-0">Trabajo</p>
         <p>consciente</p>
       </div>
-      <div className="absolute font-['Eixample_Dip:Regular',sans-serif] h-[52px] leading-[normal] left-[calc(50%-189px)] not-italic text-[#cd7fea] text-[24px] text-center top-[261px] translate-x-[-50%] w-[161px] whitespace-pre-wrap">
+      <div className="absolute font-['EB Garamond:Regular',sans-serif] h-[52px] leading-[normal] left-[calc(50%-189px)] not-italic text-[#cd7fea] text-[24px] text-center top-[261px] translate-x-[-50%] w-[161px] whitespace-pre-wrap">
         <p className="mb-0">Ganas y</p>
         <p>motivación</p>
       </div>
-      <div className="absolute font-['Eixample_Dip:Regular',sans-serif] h-[52px] leading-[normal] left-[calc(50%+186px)] not-italic text-[#cd7fea] text-[24px] text-center top-[261px] translate-x-[-50%] w-[161px] whitespace-pre-wrap">
+      <div className="absolute font-['EB Garamond:Regular',sans-serif] h-[52px] leading-[normal] left-[calc(50%+186px)] not-italic text-[#cd7fea] text-[24px] text-center top-[261px] translate-x-[-50%] w-[161px] whitespace-pre-wrap">
         <p className="mb-0">{`Actitud y `}</p>
         <p>amor propio</p>
       </div>
-      <div className="absolute font-['Eixample_Dip:Regular',sans-serif] h-[52px] leading-[normal] left-[calc(50%-3px)] not-italic text-[#cd7fea] text-[24px] text-center top-[223px] translate-x-[-50%] w-[161px] whitespace-pre-wrap">
+      <div className="absolute font-['EB Garamond:Regular',sans-serif] h-[52px] leading-[normal] left-[calc(50%-3px)] not-italic text-[#cd7fea] text-[24px] text-center top-[223px] translate-x-[-50%] w-[161px] whitespace-pre-wrap">
         <p className="mb-0">{`Fuerza y `}</p>
         <p>resistencia</p>
       </div>
-      <div className="absolute font-['Eixample_Dip:Regular',sans-serif] h-[52px] leading-[normal] left-[calc(50%+377px)] not-italic text-[#cd7fea] text-[24px] text-center top-[223px] translate-x-[-50%] w-[161px] whitespace-pre-wrap">
+      <div className="absolute font-['EB Garamond:Regular',sans-serif] h-[52px] leading-[normal] left-[calc(50%+377px)] not-italic text-[#cd7fea] text-[24px] text-center top-[223px] translate-x-[-50%] w-[161px] whitespace-pre-wrap">
         <p className="mb-0">{`Cambio de `}</p>
         <p>hábitos</p>
       </div>
@@ -611,7 +611,7 @@ function Frame21() {
         <p className="leading-[22px] mb-0">La fuerza es una de las capacidades más importantes del ser humano. Te propongo que entrenes</p>
         <p className="font-['Montserrat:SemiBold',sans-serif] leading-[1.2]">{`desde tu casa juntas, en tiempo real, 20' non stop, 4 veces por semana, 30 días.`}</p>
       </div>
-      <p className="absolute font-['Eixample_Dip:Bold',sans-serif] h-[35px] leading-[normal] left-[calc(50%-0.5px)] not-italic text-[#cd7fea] text-[36px] text-center top-0 translate-x-[-50%] w-[746px] whitespace-pre-wrap">A medida que avances te vas a encontrar con</p>
+      <p className="absolute font-['EB Garamond:Bold',sans-serif] h-[35px] leading-[normal] left-[calc(50%-0.5px)] not-italic text-[#cd7fea] text-[36px] text-center top-0 translate-x-[-50%] w-[746px] whitespace-pre-wrap">A medida que avances te vas a encontrar con</p>
       <BarradDeProgreso />
     </div>
   );
@@ -646,7 +646,7 @@ function Frame14() {
     <div className="absolute bg-[#f6eafd] content-stretch flex gap-[14px] h-[42px] items-center left-[calc(50%-12.5px)] px-[12px] py-[8px] rounded-[10px] top-[302px] translate-x-[-50%] w-[479px]">
       <div aria-hidden="true" className="absolute border border-[#d28eeb] border-solid inset-0 pointer-events-none rounded-[10px]" />
       <Capa4 />
-      <p className="font-['Eixample_Dip:Regular',sans-serif] h-[21px] leading-[22px] not-italic relative shrink-0 text-[#6e2682] text-[16px] w-[410px] whitespace-pre-wrap">Al final del camino te vas a encontrar con otra versión tuya.</p>
+      <p className="font-['EB Garamond:Regular',sans-serif] h-[21px] leading-[22px] not-italic relative shrink-0 text-[#6e2682] text-[16px] w-[410px] whitespace-pre-wrap">Al final del camino te vas a encontrar con otra versión tuya.</p>
     </div>
   );
 }
@@ -773,7 +773,7 @@ function Frame26() {
 function Frame27() {
   return (
     <div className="absolute h-[250px] left-[6px] top-0 w-[498px]">
-      <p className="absolute font-['Eixample_Dip:Bold',sans-serif] h-[35px] leading-[normal] left-0 not-italic text-[#cd7fea] text-[36px] top-0 w-[498px] whitespace-pre-wrap">Beneficios del programa</p>
+      <p className="absolute font-['EB Garamond:Bold',sans-serif] h-[35px] leading-[normal] left-0 not-italic text-[#cd7fea] text-[36px] top-0 w-[498px] whitespace-pre-wrap">Beneficios del programa</p>
       <Frame26 />
     </div>
   );
@@ -792,7 +792,7 @@ function Frame33() {
   return (
     <div className="absolute bg-[#f6eafd] content-stretch flex flex-col gap-[24px] items-center left-1/2 px-[52px] py-[32px] rounded-[40px] top-[950px] translate-x-[-50%]">
       <div aria-hidden="true" className="absolute border-4 border-[#de76ff] border-solid inset-0 pointer-events-none rounded-[40px]" />
-      <p className="font-['Eixample_Dip:Regular',sans-serif] h-[27px] leading-[22px] not-italic relative shrink-0 text-[#cd7fea] text-[45px] w-[496px] whitespace-pre-wrap">+Musculo -Tejido adiposo</p>
+      <p className="font-['EB Garamond:Regular',sans-serif] h-[27px] leading-[22px] not-italic relative shrink-0 text-[#cd7fea] text-[45px] w-[496px] whitespace-pre-wrap">+Musculo -Tejido adiposo</p>
       <p className="font-['Montserrat:Regular',sans-serif] h-[39px] leading-[0] not-italic relative shrink-0 text-[#6e2682] text-[0px] text-[16px] text-center w-[794px] whitespace-pre-wrap">
         <span className="leading-[22px]">{`Una buena musculatura es `}</span>
         <span className="font-['Montserrat:SemiBold',sans-serif] leading-[1.2]">fundamental</span>
@@ -826,9 +826,9 @@ function Frame37() {
     <div className="absolute h-[96px] left-0 top-0 w-[540px]">
       <Pastilla />
       <div className="absolute font-['Integral_CF:Bold',sans-serif] h-[89px] leading-[51px] left-[270px] not-italic text-[0px] text-center text-white top-0 translate-x-[-50%] w-[540px] whitespace-pre-wrap">
-        <p className="font-['Eixample_Dip:Regular',sans-serif] mb-0 text-[#6e2682] text-[36px]">La musculatura es</p>
+        <p className="font-['EB Garamond:Regular',sans-serif] mb-0 text-[#6e2682] text-[36px]">La musculatura es</p>
         <p>
-          <span className="font-['Eixample_Dip:Regular',sans-serif] text-[#6e2682] text-[36px]">fundamental para la</span>
+          <span className="font-['EB Garamond:Regular',sans-serif] text-[#6e2682] text-[36px]">fundamental para la</span>
           <span className="font-['Beloved_Script:Bold',sans-serif] text-[70px] text-white">{` salud`}</span>
         </p>
       </div>
@@ -983,7 +983,7 @@ function Frame20() {
 function Frame30() {
   return (
     <div className="absolute h-[350px] left-0 top-[313px] w-[536px]">
-      <p className="absolute font-['Eixample_Dip:Bold',sans-serif] h-[34px] leading-[normal] left-0 not-italic text-[#6e2682] text-[36px] top-0 w-[256px] whitespace-pre-wrap">Inscribíte ahora</p>
+      <p className="absolute font-['EB Garamond:Bold',sans-serif] h-[34px] leading-[normal] left-0 not-italic text-[#6e2682] text-[36px] top-0 w-[256px] whitespace-pre-wrap">Inscribíte ahora</p>
       <Frame20 />
     </div>
   );
@@ -1143,7 +1143,7 @@ function Frame50() {
 function Frame51() {
   return (
     <div className="absolute h-[126px] left-0 not-italic top-0 w-[527px] whitespace-pre-wrap">
-      <p className="absolute font-['Eixample_Dip:Bold',sans-serif] h-[35px] leading-[normal] left-0 text-[#cd7fea] text-[36px] top-0 w-[498px]">Nutrición</p>
+      <p className="absolute font-['EB Garamond:Bold',sans-serif] h-[35px] leading-[normal] left-0 text-[#cd7fea] text-[36px] top-0 w-[498px]">Nutrición</p>
       <p className="absolute font-['Montserrat:Regular',sans-serif] h-[65px] leading-[22px] left-0 text-[#6e2682] text-[16px] top-[61px] w-[527px]">Te invitamos a que desde hoy tus hábitos sean diferentes y los refuerces con trabajo consciente y alimentación saludable de la mano de la nutricionista del equipo.</p>
     </div>
   );

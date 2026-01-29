@@ -100,7 +100,7 @@ function HeroSection() {
 
         {/* Headline Text - Mejorada jerarquía */}
         <div className="text-center mb-[25px] md:mb-[40px] w-full">
-          <h1 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[28px] md:text-[62px] leading-[1.15] mb-4 md:mb-6 px-2 text-balance">
+          <h1 className="font-['EB Garamond'] font-bold text-[#6e2682] text-[28px] md:text-[62px] leading-[1.15] mb-4 md:mb-6 px-2 text-balance">
             {hookOptions[hookIndex]?.text ?? hookOptions[0].text}
           </h1>
           {hookOptions[hookIndex]?.subtext && (
@@ -288,7 +288,7 @@ function TestimonialsSection() {
             </p>
           </div>
 
-          <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[26px] md:text-[52px] text-balance">
+          <h2 className="font-['EB Garamond'] font-bold text-[#6e2682] text-[26px] md:text-[52px] text-balance">
             Así podes cambiar en 4 semanas
           </h2>
         </div>
@@ -366,7 +366,7 @@ function TestimonialsSection() {
                   </div>
 
                   <div className="bg-gradient-to-br from-[#cd7fea] to-[#b968d1] rounded-[12px] md:rounded-[20px] p-[18px] md:p-[30px] text-white">
-                    <h4 className="font-['Eixample_Dip'] font-bold text-[16px] md:text-[24px] mb-2 md:mb-3 leading-[1.25]">
+                    <h4 className="font-['EB Garamond'] font-bold text-[16px] md:text-[24px] mb-2 md:mb-3 leading-[1.25]">
                       {testimonial.resultTitle}
                     </h4>
                     <p className="font-['Montserrat'] text-[14px] md:text-[19px] leading-[1.6]">
@@ -463,7 +463,7 @@ function TextTestimonialsSection() {
 
       <div className="relative z-10 max-w-[1200px] mx-auto">
         <div className="text-center mb-[25px] md:mb-[45px]">
-          <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[24px] md:text-[44px] text-balance">
+          <h2 className="font-['EB Garamond'] font-bold text-[#6e2682] text-[24px] md:text-[44px] text-balance">
             Lo que dicen quienes ya entrenaron
           </h2>
         </div>
@@ -597,10 +597,10 @@ function PricingSection() {
           <div className="pt-0 lg:pt-0">
             {/* Títulos */}
             <div className="text-center lg:text-left mb-[15px] md:mb-[20px]">
-              <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[32px] md:text-[52px] leading-[1.1] mb-2 md:mb-3">
+              <h2 className="font-['EB Garamond'] font-bold text-[#6e2682] text-[32px] md:text-[52px] leading-[1.1] mb-2 md:mb-3">
                 Acceso al programa
               </h2>
-              <h3 className="font-['Eixample_Dip'] font-bold text-[#cd7fea] text-[28px] md:text-[48px] mb-4 md:mb-6 text-balance">
+              <h3 className="font-['EB Garamond'] font-bold text-[#cd7fea] text-[28px] md:text-[48px] mb-4 md:mb-6 text-balance">
                 +35 Fuerza Sin Impacto
               </h3>
 
@@ -627,7 +627,7 @@ function PricingSection() {
               </div>
             </div>
 
-            <h3 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[28px] md:text-[36px] text-center lg:text-left mb-[15px] md:mb-[20px] leading-[1.2]">
+            <h3 className="font-['EB Garamond'] font-bold text-[#6e2682] text-[28px] md:text-[36px] text-center lg:text-left mb-[15px] md:mb-[20px] leading-[1.2]">
               ¿Por qué solo este precio?
             </h3>
 
@@ -702,7 +702,7 @@ function AboutSection() {
               </div>
             </div>
 
-            <h2 className="font-['Eixample_Dip'] font-bold text-[#cd7fea] text-[28px] md:text-[42px] mb-5 md:mb-7 leading-[1.2] text-center lg:text-left text-balance">
+            <h2 className="font-['EB Garamond'] font-bold text-[#cd7fea] text-[28px] md:text-[42px] mb-5 md:mb-7 leading-[1.2] text-center lg:text-left text-balance">
               Soy Romina Traetta, entrenadora y creadora del programa +35 Fuerza Sin Impacto.
             </h2>
 
@@ -796,7 +796,7 @@ function CTASection() {
           </p>
         </div>
 
-        <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[32px] md:text-[56px] mb-3 md:mb-5 leading-[1.2] px-4 text-balance">
+        <h2 className="font-['EB Garamond'] font-bold text-[#6e2682] text-[32px] md:text-[56px] mb-3 md:mb-5 leading-[1.2] px-4 text-balance">
           Es tu momento de volver a sentirte bien
         </h2>
 
@@ -943,7 +943,7 @@ function FinalPricingSection() {
           </div>
         </div>
 
-        <h2 className="font-['Eixample_Dip'] font-bold text-[#6e2682] text-[28px] md:text-[42px] mb-[30px] md:mb-[50px] text-center md:text-left text-balance">
+        <h2 className="font-['EB Garamond'] font-bold text-[#6e2682] text-[28px] md:text-[42px] mb-[30px] md:mb-[50px] text-center md:text-left text-balance">
           Inscribíte ahora
         </h2>
 

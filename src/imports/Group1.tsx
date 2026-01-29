@@ -71,7 +71,7 @@ function Frame6() {
 function Frame7() {
   return (
     <div className="absolute h-[350px] left-0 top-[313px] w-[536px]">
-      <p className="absolute font-['Eixample_Dip:Bold',sans-serif] h-[34px] leading-[normal] left-0 not-italic text-[#6e2682] text-[36px] top-0 w-[256px] whitespace-pre-wrap">Inscribíte ahora</p>
+      <p className="absolute font-['EB Garamond:Bold',sans-serif] h-[34px] leading-[normal] left-0 not-italic text-[#6e2682] text-[36px] top-0 w-[256px] whitespace-pre-wrap">Inscribíte ahora</p>
       <Frame6 />
     </div>
   );
