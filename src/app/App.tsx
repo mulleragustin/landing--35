@@ -92,7 +92,6 @@ function HeroSection() {
       id: "hook-2",
       label: "Hook 2",
       text: "Cómo cambiar tu cuerpo después de los 35 usando fuerza sin impacto",
-      subtext: "(20 minutos por día, sin dietas restrictivas)",
     },
     {
       id: "hook-3",
@@ -140,23 +139,33 @@ function HeroSection() {
           <h1 className="font-['EB Garamond'] font-bold text-[#6e2682] text-[28px] md:text-[62px] leading-[1.15] mb-4 md:mb-6 px-2 text-balance">
             {hookOptions[hookIndex]?.text ?? hookOptions[0].text}
           </h1>
-          {hookOptions[hookIndex]?.subtext && (
-            <p className="font-['Montserrat'] font-semibold text-[#6e2682] text-[14px] md:text-[20px] leading-[1.4] mb-4 md:mb-6 text-balance">
-              {hookOptions[hookIndex]?.subtext}
-            </p>
-          )}
 
           {/* Prueba Social - Badge destacado */}
           <div className="inline-flex items-center gap-2 md:gap-3 bg-gradient-to-r from-[#cd7fea] to-[#b968d1] rounded-full px-[16px] md:px-[32px] py-[12px] md:py-[16px] mb-4 md:mb-6 shadow-lg max-w-full">
             <div className="flex -space-x-1 md:-space-x-2">
-              <div className="w-[26px] md:w-[36px] h-[26px] md:h-[36px] rounded-full bg-white border-2 border-white flex items-center justify-center flex-shrink-0">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-[#b968d1] to-[#a557bd]"></div>
+              <div className="w-[26px] md:w-[36px] h-[26px] md:h-[36px] rounded-full bg-white border-2 border-white flex items-center justify-center flex-shrink-0 overflow-hidden">
+                <img
+                  src="/avatars/avatar-1.png"
+                  alt="Alumna 1"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
-              <div className="w-[26px] md:w-[36px] h-[26px] md:h-[36px] rounded-full bg-white border-2 border-white flex items-center justify-center flex-shrink-0">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-[#b968d1] to-[#a557bd]"></div>
+              <div className="w-[26px] md:w-[36px] h-[26px] md:h-[36px] rounded-full bg-white border-2 border-white flex items-center justify-center flex-shrink-0 overflow-hidden">
+                <img
+                  src="/avatars/avatar-2.png"
+                  alt="Alumna 2"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
-              <div className="w-[26px] md:w-[36px] h-[26px] md:h-[36px] rounded-full bg-white border-2 border-white flex items-center justify-center flex-shrink-0">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-[#b968d1] to-[#a557bd]"></div>
+              <div className="w-[26px] md:w-[36px] h-[26px] md:h-[36px] rounded-full bg-white border-2 border-white flex items-center justify-center flex-shrink-0 overflow-hidden">
+                <img
+                  src="/avatars/avatar-3.png"
+                  alt="Alumna 3"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
             </div>
             <p className="font-['Montserrat'] font-bold text-white text-[13px] md:text-[18px] leading-tight">
@@ -280,6 +289,8 @@ function TestimonialsSection() {
       subtitle: "Trabaja sentada todo el día",
       initial: "C",
       quote: "Tenía poca energía, se sentía inflamada",
+      beforeImage: "/casos/CASO-1-ANTES.jpg",
+      afterImage: "/casos/CASO-1-DESPUES.jpg",
       resultTitle: "En 4 semanas con fuerza sin impacto:",
       resultText:
         "se sintió más firme, más liviana, ganó fuerza y volvió a entrenar sin miedo a lesionarse.",
@@ -290,6 +301,8 @@ function TestimonialsSection() {
       subtitle: "Probó rutinas intensas",
       initial: "S",
       quote: "Probó rutinas intensas y solo conseguía cansancio y frustración",
+      beforeImage: "/casos/caso-2-antes.jpg",
+      afterImage: "/casos/CASO-2-DESPUES.jpg",
       resultTitle: "Con el plan sin impacto:",
       resultText: "volvió a sentirse constante y notó cambios reales en su cuerpo.",
     },
@@ -324,7 +337,7 @@ function TestimonialsSection() {
                   <div className="grid grid-cols-2 gap-[12px] md:gap-[30px] mb-[18px] md:mb-[30px]">
                     <div
                       className="relative md:cursor-default cursor-pointer active:scale-95 md:active:scale-100 transition-transform"
-                      onClick={() => setSelectedImage({ url: "placeholder", label: "ANTES" })}
+                      onClick={() => setSelectedImage({ url: testimonial.beforeImage, label: "ANTES" })}
                     >
                       <div className="absolute top-[10px] md:top-[15px] left-[10px] md:left-[15px] bg-white border-2 border-[#6e2682] rounded-full px-[10px] md:px-[16px] py-[5px] md:py-[8px] z-10 pointer-events-none shadow-lg">
                         <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[11px] md:text-[14px]">
@@ -347,16 +360,19 @@ function TestimonialsSection() {
                           />
                         </svg>
                       </div>
-                      <div
-                        className="aspect-[3/4] rounded-[12px] md:rounded-[20px] border-2 border-[#e1b4f3] overflow-hidden skeleton"
-                        role="img"
-                        aria-label="Imagen antes"
-                      />
+                      <div className="aspect-[3/4] rounded-[12px] md:rounded-[20px] border-2 border-[#e1b4f3] overflow-hidden">
+                        <img
+                          src={testimonial.beforeImage}
+                          alt={`Antes - Caso ${testimonial.id}`}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                      </div>
                     </div>
 
                     <div
                       className="relative md:cursor-default cursor-pointer active:scale-95 md:active:scale-100 transition-transform"
-                      onClick={() => setSelectedImage({ url: "placeholder", label: "DESPUÉS" })}
+                      onClick={() => setSelectedImage({ url: testimonial.afterImage, label: "DESPUÉS" })}
                     >
                       <div className="absolute top-[10px] md:top-[15px] left-[10px] md:left-[15px] bg-gradient-to-br from-[#cd7fea] to-[#b968d1] rounded-full px-[10px] md:px-[16px] py-[5px] md:py-[8px] z-10 pointer-events-none shadow-lg">
                         <p className="font-['Montserrat'] font-bold text-white text-[11px] md:text-[14px]">
@@ -379,11 +395,14 @@ function TestimonialsSection() {
                           />
                         </svg>
                       </div>
-                      <div
-                        className="aspect-[3/4] rounded-[12px] md:rounded-[20px] border-2 md:border-4 border-[#cd7fea] overflow-hidden skeleton"
-                        role="img"
-                        aria-label="Imagen después"
-                      />
+                      <div className="aspect-[3/4] rounded-[12px] md:rounded-[20px] border-2 md:border-4 border-[#cd7fea] overflow-hidden">
+                        <img
+                          src={testimonial.afterImage}
+                          alt={`Despues - Caso ${testimonial.id}`}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                      </div>
                     </div>
                   </div>
 
@@ -446,11 +465,14 @@ function TestimonialsSection() {
             </div>
 
             {/* Imagen */}
-            <div
-              className="aspect-[3/4] rounded-[20px] border-4 border-[#cd7fea] overflow-hidden shadow-2xl skeleton"
-              role="img"
-              aria-label="Imagen ampliada"
-            />
+            <div className="aspect-[3/4] rounded-[20px] border-4 border-[#cd7fea] overflow-hidden shadow-2xl">
+              <img
+                src={selectedImage.url}
+                alt={`Imagen ampliada - ${selectedImage.label}`}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
 
             <p className="font-['Montserrat'] text-white text-center mt-5 text-[14px] opacity-90 leading-[1.5]">
               Toca fuera de la imagen para cerrar
@@ -467,15 +489,15 @@ function TextTestimonialsSection() {
   const textTestimonials = [
     {
       id: 1,
-      text: "Tenía poca energía y se sentía inflamada. En 4 semanas con fuerza sin impacto se sintió más firme, más liviana y volvió a entrenar sin miedo a lesionarse.",
+      text: "El programa +35 me cambió la vida. Pasé de la obesidad a un camino saludable. Antes me costaba mucho entrenar, pero este plan logró levantarme de la cama y hoy lo disfruto.",
     },
     {
       id: 2,
-      text: "Probó rutinas intensas y solo conseguía cansancio y frustración. Con el plan sin impacto volvió a sentirse constante y notó cambios reales en su cuerpo.",
+      text: "Estaba muerta de cansancio y dolor de cabeza, a punto de no entrenar. Pero arranqué y me cambió el día. Mejoró mi cuerpo, pero sobre todo mi salud, y eso no tiene precio.",
     },
     {
       id: 3,
-      text: "Me costaba sostener rutinas largas. Con 20 minutos por día pude mantenerme constante y noté cambios sin exigirme de más.",
+      text: "Llegué sin esperanza y por urgencia médica. Hoy tengo 55 años pero me siento de 30: mis exámenes dieron perfecto, bajó el colesterol y se fueron los dolores de menopausia.",
     },
     // Agrega más testimonios aquí
   ];
@@ -1099,6 +1121,21 @@ export default function App() {
       <CTASection />
       <FinalPricingSection />
       <FooterSection />
+      <a
+        href="https://api.whatsapp.com/send?phone=5491130130009"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="WhatsApp"
+        className="fixed bottom-[18px] right-[18px] md:bottom-[28px] md:right-[28px] z-[60] w-[56px] h-[56px] md:w-[64px] md:h-[64px] rounded-full bg-[#25D366] shadow-[0_10px_25px_rgba(37,211,102,0.35)] flex items-center justify-center hover:scale-[1.05] transition-transform"
+      >
+        <img
+          src="/wap.png"
+          alt=""
+          className="w-[28px] h-[28px] md:w-[32px] md:h-[32px]"
+          loading="lazy"
+        />
+        <span className="sr-only">WhatsApp</span>
+      </a>
     </div>
   );
 }
