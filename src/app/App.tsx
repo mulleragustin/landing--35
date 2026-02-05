@@ -177,14 +177,14 @@ function HeroSection() {
         {/* VSL Video Container */}
 
         <div className="relative w-full max-w-[800px] mb-[30px] md:mb-[40px] rounded-[10px] overflow-hidden border-[3px] md:border-[6px] border-[#cd7fea]">
-          <div className="relative w-full pb-[56.2%]">
+          <div className="relative w-full pt-[56.2%]">
             <iframe
               title="VSL"
-              src="https://drive.google.com/file/d/13Q-as5JhOAL82RlPPl0Yin_6XgbS1uQt/preview"
-              className="absolute top-0 left-0 w-full h-full"
-              allow="autoplay; fullscreen; picture-in-picture"
+              src="https://iframe.mediadelivery.net/embed/245855/a9ffd09a-2a97-4fad-83f1-bdaabf746483?autoplay=false&loop=false&muted=false&preload=true&responsive=true"
+              loading="lazy"
+              className="absolute top-0 left-0 w-full h-full border-0"
+              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
               allowFullScreen
-              style={{ border: "none" }}
             />
           </div>
         </div>
@@ -738,7 +738,7 @@ function AboutSection() {
               {/* Highlight principal */}
               <div className="bg-gradient-to-r from-[#f6eafd] to-transparent border-l-4 border-[#cd7fea] p-[16px] md:p-[20px] rounded-[8px]">
                 <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[17px] md:text-[20px] leading-[1.4] text-center lg:text-left text-balance">
-                  Entreno para sentirme fuerte, liviana y con energía.
+                  "Entreno para sentirme fuerte, liviana y con energía".
                 </p>
               </div>
 
