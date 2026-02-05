@@ -96,7 +96,7 @@ function HeroSection() {
     {
       id: "hook-3",
       label: "Hook 3",
-      text: "El sistema de fuerza sin impacto que permite a mujeres +35 verse más firmes sin dolor ni exigencia extrema",
+      text: "El método de fuerza sin impacto que permite a mujeres +35 verse más firmes sin dolor ni exigencia extrema",
     },
   ];
   const [hookIndex, setHookIndex] = React.useState(() => {
@@ -306,7 +306,54 @@ function TestimonialsSection() {
       resultTitle: "Con el plan sin impacto:",
       resultText: "volvió a sentirse constante y notó cambios reales en su cuerpo.",
     },
+    {
+      id: 3,
+      name: "Sole, 46 años",
+
+      initial: "S",
+      quote: "Probó rutinas intensas y solo conseguía cansancio y frustración",
+      beforeImage: "/casos/CASO-3-ANTES.jpg",
+      afterImage: "/casos/CASO-3-DESPUES.jpg",
+      resultTitle: "Con el programa +35:",
+      resultText: "vió cambios reales y mantuvo hábitos saludables a lo largo del tiempo.",
+    },
+    {
+      id: 4,
+      name: "Sole, 46 años",
+
+      initial: "S",
+      quote: "Probó rutinas intensas y solo conseguía cansancio y frustración",
+      beforeImage: "/casos/CASO-4-ANTES.jpg",
+      afterImage: "/casos/CASO-4-DESPUES.jpg",
+    },
     // Aquí puedes agregar más testimonios fácilmente
+    {
+      id: 5,
+      name: "Sole, 46 años",
+
+      initial: "S",
+      quote: "Probó rutinas intensas y solo conseguía cansancio y frustración",
+      beforeImage: "/casos/CASO-5-ANTES.jpg",
+      afterImage: "/casos/CASO-5-DESPUES.jpg",
+    },
+    {
+      id: 6,
+      name: "Sole, 46 años",
+
+      initial: "S",
+      quote: "Probó rutinas intensas y solo conseguía cansancio y frustración",
+      beforeImage: "/casos/CASO-6-ANTES.jpg",
+      afterImage: "/casos/CASO-6-DESPUES.jpg",
+    },
+    {
+      id: 7,
+      name: "Sole, 46 años",
+
+      initial: "S",
+      quote: "Probó rutinas intensas y solo conseguía cansancio y frustración",
+      beforeImage: "/casos/CASO-7-ANTES.jpg",
+      afterImage: "/casos/CASO-7-DESPUES.jpg",
+    },
   ];
 
   return (
@@ -337,7 +384,9 @@ function TestimonialsSection() {
                   <div className="grid grid-cols-2 gap-[12px] md:gap-[30px] mb-[18px] md:mb-[30px]">
                     <div
                       className="relative md:cursor-default cursor-pointer active:scale-95 md:active:scale-100 transition-transform"
-                      onClick={() => setSelectedImage({ url: testimonial.beforeImage, label: "ANTES" })}
+                      onClick={() =>
+                        setSelectedImage({ url: testimonial.beforeImage, label: "ANTES" })
+                      }
                     >
                       <div className="absolute top-[10px] md:top-[15px] left-[10px] md:left-[15px] bg-white border-2 border-[#6e2682] rounded-full px-[10px] md:px-[16px] py-[5px] md:py-[8px] z-10 pointer-events-none shadow-lg">
                         <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[11px] md:text-[14px]">
@@ -360,11 +409,11 @@ function TestimonialsSection() {
                           />
                         </svg>
                       </div>
-                      <div className="aspect-[3/4] rounded-[12px] md:rounded-[20px] border-2 border-[#e1b4f3] overflow-hidden">
+                      <div className="aspect-[3/4] rounded-[12px] md:rounded-[20px] border-2 border-[#e1b4f3] overflow-hidden bg-[#F6EAFD]">
                         <img
                           src={testimonial.beforeImage}
                           alt={`Antes - Caso ${testimonial.id}`}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover scale-[1.06] md:scale-[1.08] origin-center transform"
                           loading="lazy"
                         />
                       </div>
@@ -372,7 +421,9 @@ function TestimonialsSection() {
 
                     <div
                       className="relative md:cursor-default cursor-pointer active:scale-95 md:active:scale-100 transition-transform"
-                      onClick={() => setSelectedImage({ url: testimonial.afterImage, label: "DESPUÉS" })}
+                      onClick={() =>
+                        setSelectedImage({ url: testimonial.afterImage, label: "DESPUÉS" })
+                      }
                     >
                       <div className="absolute top-[10px] md:top-[15px] left-[10px] md:left-[15px] bg-gradient-to-br from-[#cd7fea] to-[#b968d1] rounded-full px-[10px] md:px-[16px] py-[5px] md:py-[8px] z-10 pointer-events-none shadow-lg">
                         <p className="font-['Montserrat'] font-bold text-white text-[11px] md:text-[14px]">
@@ -395,25 +446,26 @@ function TestimonialsSection() {
                           />
                         </svg>
                       </div>
-                      <div className="aspect-[3/4] rounded-[12px] md:rounded-[20px] border-2 md:border-4 border-[#cd7fea] overflow-hidden">
+                      <div className="aspect-[3/4] rounded-[12px] md:rounded-[20px] border-2 md:border-4 border-[#cd7fea] overflow-hidden bg-[#F6EAFD]">
                         <img
                           src={testimonial.afterImage}
                           alt={`Despues - Caso ${testimonial.id}`}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover scale-[1.06] md:scale-[1.08] origin-center transform"
                           loading="lazy"
                         />
                       </div>
                     </div>
                   </div>
-
-                  <div className="bg-gradient-to-br from-[#cd7fea] to-[#b968d1] rounded-[12px] md:rounded-[20px] p-[18px] md:p-[30px] text-white">
-                    <h4 className="font-['EB Garamond'] font-bold text-[16px] md:text-[24px] mb-2 md:mb-3 leading-[1.25]">
-                      {testimonial.resultTitle}
-                    </h4>
-                    <p className="font-['Montserrat'] text-[14px] md:text-[19px] leading-[1.6]">
-                      {testimonial.resultText}
-                    </p>
-                  </div>
+                  {testimonial.resultTitle && testimonial.resultText && (
+                    <div className="bg-gradient-to-br from-[#cd7fea] to-[#b968d1] rounded-[12px] md:rounded-[20px] p-[18px] md:p-[30px] text-white">
+                      <h4 className="font-['EB Garamond'] font-bold text-[16px] md:text-[24px] mb-2 md:mb-3 leading-[1.25]">
+                        {testimonial.resultTitle}
+                      </h4>
+                      <p className="font-['Montserrat'] text-[14px] md:text-[19px] leading-[1.6]">
+                        {testimonial.resultText}
+                      </p>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -1091,7 +1143,7 @@ function FinalPricingSection() {
 // Footer Section
 function FooterSection() {
   return (
-    <footer className="bg-[#1b1b1b] text-white/70 px-[20px] md:px-[109px] py-[18px] md:py-[22px]">
+    <footer className="bg-[#1b1b1b] text-white/70 px-[20px] md:px-[109px] py-[18px] md:py-[22px] pb-[calc(18px+env(safe-area-inset-bottom))] md:pb-[calc(22px+env(safe-area-inset-bottom))]">
       <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-3 md:gap-6 text-[12px] md:text-[14px]">
         <p className="font-['Montserrat'] tracking-wide">RTFIT® 2026 | All Rights Reserved</p>
         <a
@@ -1120,22 +1172,17 @@ export default function App() {
       <FAQSection />
       <CTASection />
       <FinalPricingSection />
-      <FooterSection />
       <a
         href="https://api.whatsapp.com/send?phone=5491130130009"
         target="_blank"
         rel="noreferrer"
         aria-label="WhatsApp"
-        className="fixed bottom-[18px] right-[18px] md:bottom-[28px] md:right-[28px] z-[60] w-[56px] h-[56px] md:w-[64px] md:h-[64px] rounded-full bg-[#25D366] shadow-[0_10px_25px_rgba(37,211,102,0.35)] flex items-center justify-center hover:scale-[1.05] transition-transform"
+        className="fixed bottom-[calc(18px+env(safe-area-inset-bottom))] right-[18px] md:bottom-[calc(28px+env(safe-area-inset-bottom))] md:right-[28px] z-[60] w-[56px] h-[56px] md:w-[64px] md:h-[64px] rounded-full bg-[#25D366] shadow-[0_10px_25px_rgba(37,211,102,0.35)] flex items-center justify-center hover:scale-[1.05] transition-transform"
       >
-        <img
-          src="/wap.png"
-          alt=""
-          className="w-[28px] h-[28px] md:w-[32px] md:h-[32px]"
-          loading="lazy"
-        />
+        <img src="/wap.png" alt="" className="w-[48px] h-[48px] " loading="lazy" />
         <span className="sr-only">WhatsApp</span>
       </a>
+      <FooterSection />
     </div>
   );
 }
