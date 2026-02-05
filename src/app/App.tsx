@@ -62,13 +62,31 @@ function Header() {
   );
 }
 
+const getHookIndexFromPath = (pathname: string) => {
+  const normalizedPath = pathname.toLowerCase().replace(/\/+$/, "");
+  const segment = normalizedPath.split("/").filter(Boolean).pop();
+
+  if (segment === "add2") {
+    return 1;
+  }
+
+  if (segment === "add3") {
+    return 2;
+  }
+
+  return 0;
+};
+
+const productUrl = "https://rominatraetta.com/producto/35-fuerza-sin-impacto/";
+const productUrlUsd = "https://rominatraetta.com/producto/35-fuerza-sin-impacto/?currency=USD";
+
 // Hero Section
 function HeroSection() {
   const hookOptions = [
     {
       id: "hook-1",
       label: "Hook 1",
-      text: "El método secreto para mujeres de +35 años para volver a sentirte joven y bellas con su cuerpo",
+      text: "El método secreto para mujeres de +35 años para volver a sentirse jóvenes y bellas con su cuerpo",
     },
     {
       id: "hook-2",
@@ -82,7 +100,26 @@ function HeroSection() {
       text: "El sistema de fuerza sin impacto que permite a mujeres +35 verse más firmes sin dolor ni exigencia extrema",
     },
   ];
-  const [hookIndex, setHookIndex] = React.useState(0);
+  const [hookIndex, setHookIndex] = React.useState(() => {
+    if (typeof window === "undefined") {
+      return 0;
+    }
+
+    return getHookIndexFromPath(window.location.pathname);
+  });
+
+  React.useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const handlePopState = () => {
+      setHookIndex(getHookIndexFromPath(window.location.pathname));
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
 
   return (
     <div className="relative w-full bg-gradient-to-b from-white via-[#fdf5ff] to-white py-[30px] md:py-[50px] px-[20px] md:px-[109px]">
@@ -108,28 +145,6 @@ function HeroSection() {
               {hookOptions[hookIndex]?.subtext}
             </p>
           )}
-
-          <div
-            className="flex flex-wrap justify-center gap-2 md:gap-3 mb-4 md:mb-6"
-            role="group"
-            aria-label="Selector de hook"
-          >
-            {hookOptions.map((hook, index) => (
-              <button
-                key={hook.id}
-                type="button"
-                onClick={() => setHookIndex(index)}
-                aria-pressed={hookIndex === index}
-                className={`px-[14px] md:px-[18px] py-[8px] md:py-[10px] rounded-full border font-['Montserrat'] text-[12px] md:text-[14px] font-semibold transition-all duration-200 ${
-                  hookIndex === index
-                    ? "bg-[#6e2682] text-white border-[#6e2682] shadow-md"
-                    : "bg-white text-[#6e2682] border-[#cd7fea] hover:bg-[#f6e9fb]"
-                }`}
-              >
-                {hook.label}
-              </button>
-            ))}
-          </div>
 
           {/* Prueba Social - Badge destacado */}
           <div className="inline-flex items-center gap-2 md:gap-3 bg-gradient-to-r from-[#cd7fea] to-[#b968d1] rounded-full px-[16px] md:px-[32px] py-[12px] md:py-[16px] mb-4 md:mb-6 shadow-lg max-w-full">
@@ -160,13 +175,17 @@ function HeroSection() {
         </div>
 
         {/* VSL Video Container */}
-        <div className="relative w-full max-w-[900px] mb-[20px] md:mb-[40px]">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#cd7fea] to-[#b968d1] opacity-20 blur-2xl rounded-[20px] scale-[1.03]"></div>
 
-          <div className="relative aspect-video bg-gradient-to-br from-[#1a1a1a] to-[#000000] border-[3px] md:border-[6px] border-[#cd7fea] rounded-[10px] md:rounded-[20px] flex items-center justify-center shadow-2xl overflow-hidden">
-            <p className="font-['Integral_CF'] text-white text-[28px] md:text-[64px] opacity-80">
-              VSL
-            </p>
+        <div className="relative w-full max-w-[800px] mb-[30px] md:mb-[40px] rounded-[10px] overflow-hidden border-[3px] md:border-[6px] border-[#cd7fea]">
+          <div className="relative w-full pb-[56.2%]">
+            <iframe
+              title="VSL"
+              src="https://drive.google.com/file/d/13Q-as5JhOAL82RlPPl0Yin_6XgbS1uQt/preview"
+              className="absolute top-0 left-0 w-full h-full"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              style={{ border: "none" }}
+            />
           </div>
         </div>
 
@@ -176,9 +195,12 @@ function HeroSection() {
             Un plan simple, pensado para que esta vez sí lo sostengas
           </p>
 
-          <button className="bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[32px] md:px-[70px] py-[18px] md:py-[26px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[24px] shadow-2xl hover:shadow-[0_20px_60px_rgba(205,127,234,0.5)] hover:scale-[1.05] transform w-full md:w-auto">
+          <a
+            href={productUrl}
+            className="inline-flex items-center justify-center bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[32px] md:px-[70px] py-[18px] md:py-[26px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[24px] shadow-2xl hover:shadow-[0_20px_60px_rgba(205,127,234,0.5)] hover:scale-[1.05] transform w-full md:w-auto"
+          >
             Quiero entrenar sin exigirme
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -381,9 +403,12 @@ function TestimonialsSection() {
 
         {/* CTA Button */}
         <div className="text-center mt-[40px] md:mt-[60px] px-4">
-          <button className="bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[40px] md:px-[60px] py-[18px] md:py-[24px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[22px] shadow-xl hover:shadow-2xl hover:scale-[1.03] transform w-full md:w-auto">
+          <a
+            href={productUrl}
+            className="inline-flex items-center justify-center bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[40px] md:px-[60px] py-[18px] md:py-[24px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[22px] shadow-xl hover:shadow-2xl hover:scale-[1.03] transform w-full md:w-auto"
+          >
             QUIERO UNIRME AHORA
-          </button>
+          </a>
         </div>
       </div>
 
@@ -583,9 +608,12 @@ function PricingSection() {
               </div>
 
               {/* Botón CTA mejorado */}
-              <button className="relative bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 w-full px-[24px] py-[20px] md:py-[24px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[19px] md:text-[22px] shadow-xl hover:shadow-2xl hover:scale-[1.03] transform">
+              <a
+                href={productUrl}
+                className="relative inline-flex items-center justify-center bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 w-full px-[24px] py-[20px] md:py-[24px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[19px] md:text-[22px] shadow-xl hover:shadow-2xl hover:scale-[1.03] transform"
+              >
                 ¡LO QUIERO!
-              </button>
+              </a>
 
               <p className="font-['Montserrat'] text-[#6e2682] text-[13px] md:text-[15px] text-center mt-4 opacity-70 leading-[1.4]">
                 Acceso inmediato después del pago
@@ -649,7 +677,7 @@ function PricingSection() {
                     MENOS DE
                   </p>
                   <p className="font-['Integral_CF'] text-white text-[42px] md:text-[52px] leading-[1]">
-                    $2.500
+                    $600
                   </p>
                   <p className="font-['Montserrat'] text-white text-[18px] md:text-[22px] font-bold">
                     EL DÍA
@@ -761,9 +789,12 @@ function AboutSection() {
 
             {/* CTA */}
             <div className="flex justify-center lg:justify-start">
-              <button className="bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[30px] md:px-[40px] py-[16px] md:py-[18px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[16px] md:text-[18px] shadow-lg hover:shadow-xl hover:scale-[1.02] transform w-full md:w-auto">
+              <a
+                href={productUrl}
+                className="inline-flex items-center justify-center bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[30px] md:px-[40px] py-[16px] md:py-[18px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[16px] md:text-[18px] shadow-lg hover:shadow-xl hover:scale-[1.02] transform w-full md:w-auto"
+              >
                 QUIERO ENTRENAR CON ROMINA
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -804,9 +835,12 @@ function CTASection() {
           4 semanas · 20 minutos · Fuerza sin impacto desde casa.
         </p>
 
-        <button className="bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[40px] md:px-[70px] py-[20px] md:py-[26px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[24px] shadow-2xl hover:shadow-[0_20px_60px_rgba(205,127,234,0.4)] hover:scale-[1.05] transform w-full md:w-auto">
+        <a
+          href={productUrl}
+          className="inline-flex items-center justify-center bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[40px] md:px-[70px] py-[20px] md:py-[26px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[24px] shadow-2xl hover:shadow-[0_20px_60px_rgba(205,127,234,0.4)] hover:scale-[1.05] transform w-full md:w-auto"
+        >
           QUIERO UNIRME A +35
-        </button>
+        </a>
       </div>
     </div>
   );
@@ -827,7 +861,7 @@ function FAQSection() {
     },
     {
       question: "¿Cuáles son los elementos?",
-      answer: "Colchoneta, mancuerna, tobillera y deslizadores.",
+      answer: "Colchoneta, mancuernas, tobilleras y deslizadores o medias viejas.",
     },
     {
       question: "¿Para quién está orientado?",
@@ -914,9 +948,12 @@ function FAQSection() {
           <p className="font-['Montserrat'] text-[#6e2682] text-[16px] md:text-[18px] mb-5 md:mb-6">
             ¿Tenés más dudas? Estamos para ayudarte
           </p>
-          <button className="bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[30px] md:px-[40px] py-[16px] md:py-[18px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[16px] md:text-[18px] shadow-lg hover:shadow-xl hover:scale-[1.02] transform w-full md:w-auto">
+          <a
+            href={productUrl}
+            className="inline-flex items-center justify-center bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[30px] md:px-[40px] py-[16px] md:py-[18px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[16px] md:text-[18px] shadow-lg hover:shadow-xl hover:scale-[1.02] transform w-full md:w-auto"
+          >
             QUIERO EMPEZAR AHORA
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -976,9 +1013,12 @@ function FinalPricingSection() {
                 </p>
               </div>
 
-              <button className="bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[20px] py-[18px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[20px] w-full shadow-xl hover:shadow-2xl hover:scale-[1.03] transform">
+              <a
+                href={productUrlUsd}
+                className="inline-flex items-center justify-center bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[20px] py-[18px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[20px] w-full shadow-xl hover:shadow-2xl hover:scale-[1.03] transform"
+              >
                 ¡LO QUIERO!
-              </button>
+              </a>
             </div>
           </div>
 
@@ -1008,9 +1048,12 @@ function FinalPricingSection() {
                 </p>
               </div>
 
-              <button className="bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[20px] py-[18px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[20px] w-full shadow-xl hover:shadow-2xl hover:scale-[1.03] transform">
+              <a
+                href={productUrl}
+                className="inline-flex items-center justify-center bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[20px] py-[18px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[20px] w-full shadow-xl hover:shadow-2xl hover:scale-[1.03] transform"
+              >
                 ¡LO QUIERO!
-              </button>
+              </a>
             </div>
           </div>
         </div>
