@@ -630,8 +630,11 @@ function PricingSection() {
                   </p>
                 </div>
 
+                <p className="font-['Integral_CF'] text-[#9a9a9a] text-[22px] md:text-[28px] leading-[1] mb-1 whitespace-nowrap line-through">
+                  $73.690 <span className="text-[#9a9a9a]">-</span> 60 USD
+                </p>
                 <p className="font-['Integral_CF'] text-[#cd7fea] text-[36px] md:text-[52px] leading-[1] mb-2 md:mb-3 whitespace-nowrap">
-                  $73.690 <span className="text-[#6e2682]">-</span> 60 USD
+                  $52.000 <span className="text-[#6e2682]">-</span> 45 USD
                 </p>
                 <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[12px] md:text-[14px] uppercase tracking-wide mb-2 px-2">
                   Pesos Argentinos o si estás en el exterior
@@ -639,7 +642,7 @@ function PricingSection() {
 
                 <div className="bg-[#f6eafd] border border-[#cd7fea] rounded-[12px] px-[16px] md:px-[20px] py-[10px] md:py-[12px] inline-block">
                   <p className="font-['Montserrat'] font-bold text-[#cd7fea] text-[15px] md:text-[18px]">
-                    3 cuotas sin interés de $24.563
+                    3 cuotas sin interés de $17.333
                   </p>
                 </div>
               </div>
@@ -751,7 +754,7 @@ function PricingSection() {
                     MENOS DE
                   </p>
                   <p className="font-['Integral_CF'] text-white text-[42px] md:text-[52px] leading-[1]">
-                    $600
+                    $433
                   </p>
                   <p className="font-['Montserrat'] text-white text-[18px] md:text-[22px] font-bold">
                     EL DÍA
@@ -1037,7 +1040,7 @@ function FAQSection() {
 // Final Pricing CTA Section
 function FinalPricingSection() {
   return (
-    <div className="relative py-[60px] md:py-[100px] px-[20px] md:px-[109px] min-h-[500px] md:min-h-[650px] flex items-center justify-center md:justify-end overflow-hidden">
+    <div className="relative py-[60px] md:py-[100px] px-[20px] md:px-[109px] min-h-[500px] md:min-h-[650px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 pointer-events-none opacity-35 bg-gradient-to-br from-gray-100 via-gray-200 to-gray-100"></div>
 
       {/* Overlay para mejor contraste */}
@@ -1071,8 +1074,11 @@ function FinalPricingSection() {
                   </p>
                 </div>
 
-                <p className="font-['Integral_CF'] text-[#cd7fea] text-[34px] md:text-[38px] leading-[1] mb-2 md:mb-3 whitespace-nowrap">
+                <p className="font-['Integral_CF'] text-[#9a9a9a] text-[20px] md:text-[22px] leading-[1] mb-1 whitespace-nowrap line-through">
                   $73.690
+                </p>
+                <p className="font-['Integral_CF'] text-[#cd7fea] text-[34px] md:text-[38px] leading-[1] mb-2 md:mb-3 whitespace-nowrap">
+                  $52.000
                 </p>
                 <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[13px] md:text-[15px] uppercase mb-2">
                   Pesos Argentinos
@@ -1083,7 +1089,7 @@ function FinalPricingSection() {
                 <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[15px] md:text-[16px] text-center leading-[1.4]">
                   3 cuotas sin interés
                   <br />
-                  de $24.563
+                  de $17.333
                 </p>
               </div>
 
@@ -1108,8 +1114,11 @@ function FinalPricingSection() {
                   </p>
                 </div>
 
-                <p className="font-['Integral_CF'] text-[#cd7fea] text-[34px] md:text-[38px] leading-[1] mb-2 md:mb-3 whitespace-nowrap">
+                <p className="font-['Integral_CF'] text-[#9a9a9a] text-[20px] md:text-[22px] leading-[1] mb-1 whitespace-nowrap line-through">
                   U$D 60
+                </p>
+                <p className="font-['Integral_CF'] text-[#cd7fea] text-[34px] md:text-[38px] leading-[1] mb-2 md:mb-3 whitespace-nowrap">
+                  U$D 45
                 </p>
                 <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[13px] md:text-[15px] uppercase mb-2">
                   Si estás en el exterior

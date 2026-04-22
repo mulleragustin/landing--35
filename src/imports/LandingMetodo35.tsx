@@ -915,9 +915,10 @@ function Frame42() {
 
 function Frame16() {
   return (
-    <div className="h-[62px] not-italic relative shrink-0 w-[169px] whitespace-pre">
-      <p className="absolute font-['Integral_CF:Regular',sans-serif] leading-[normal] left-[19px] text-[#cd7fea] text-[30px] top-0">$xx.xxx</p>
-      <p className="absolute font-['Montserrat:Regular',sans-serif] leading-[1.2] left-0 text-[16px] text-black top-[43px]">PESOS ARGENTINOS</p>
+    <div className="flex flex-col items-center not-italic shrink-0 whitespace-pre">
+      <p className="font-['Integral_CF:Regular',sans-serif] leading-[normal] text-[#9a9a9a] text-[20px] line-through">$73.690</p>
+      <p className="font-['Integral_CF:Regular',sans-serif] leading-[normal] text-[#cd7fea] text-[30px]">$52.000</p>
+      <p className="font-['Montserrat:Regular',sans-serif] leading-[1.2] text-[16px] text-black">PESOS ARGENTINOS</p>
     </div>
   );
 }
@@ -937,7 +938,7 @@ function Frame19() {
       <Frame16 />
       <div className="font-['Montserrat:SemiBold',sans-serif] leading-[1.2] not-italic relative shrink-0 text-[16px] text-black text-center whitespace-nowrap whitespace-pre">
         <p className="mb-0">3 cuotas sin interés</p>
-        <p>de $XX.XXX</p>
+        <p>de $17.333</p>
       </div>
       <Frame13 />
     </div>
@@ -946,9 +947,10 @@ function Frame19() {
 
 function Frame17() {
   return (
-    <div className="h-[62px] not-italic relative shrink-0 w-[208px] whitespace-pre">
-      <p className="absolute font-['Integral_CF:Regular',sans-serif] leading-[normal] left-[20px] text-[#cd7fea] text-[30px] top-0">U$D xx,xx</p>
-      <p className="absolute font-['Montserrat:Regular',sans-serif] leading-[1.2] left-0 text-[16px] text-black top-[43px]">SI ESTÁS EN EL EXTERIOR</p>
+    <div className="flex flex-col items-center not-italic shrink-0 whitespace-pre">
+      <p className="font-['Integral_CF:Regular',sans-serif] leading-[normal] text-[#9a9a9a] text-[20px] line-through">U$D 60</p>
+      <p className="font-['Integral_CF:Regular',sans-serif] leading-[normal] text-[#cd7fea] text-[30px]">U$D 45</p>
+      <p className="font-['Montserrat:Regular',sans-serif] leading-[1.2] text-[16px] text-black">SI ESTÁS EN EL EXTERIOR</p>
     </div>
   );
 }
@@ -1042,7 +1044,7 @@ function Logos1() {
 
 function Frame47() {
   return (
-    <div className="absolute h-[663px] left-[688px] top-[4566px] w-[536px]">
+    <div className="absolute h-[663px] left-1/2 -translate-x-1/2 top-[4566px] w-[536px]">
       <Frame30 />
       <Logos1 />
     </div>
