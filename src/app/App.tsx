@@ -639,12 +639,6 @@ function PricingSection() {
                 <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[12px] md:text-[14px] uppercase tracking-wide mb-2 px-2">
                   Pesos Argentinos o si estás en el exterior
                 </p>
-
-                <div className="bg-[#f6eafd] border border-[#cd7fea] rounded-[12px] px-[16px] md:px-[20px] py-[10px] md:py-[12px] inline-block">
-                  <p className="font-['Montserrat'] font-bold text-[#cd7fea] text-[15px] md:text-[18px]">
-                    3 cuotas sin interés de $17.333
-                  </p>
-                </div>
               </div>
 
               {/* Lista de beneficios */}
@@ -1082,14 +1076,6 @@ function FinalPricingSection() {
                 </p>
                 <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[13px] md:text-[15px] uppercase mb-2">
                   Pesos Argentinos
-                </p>
-              </div>
-
-              <div className="bg-[#f6eafd] rounded-[12px] px-[20px] py-[14px] w-full">
-                <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[15px] md:text-[16px] text-center leading-[1.4]">
-                  3 cuotas sin interés
-                  <br />
-                  de $17.333
                 </p>
               </div>
 
