@@ -1057,10 +1057,10 @@ function FinalPricingSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px] md:gap-[30px]">
           {/* Card Pesos Argentinos */}
-          <div className="relative group">
+          <div className="relative group h-full">
             <div className="absolute inset-0 bg-gradient-to-br from-[#cd7fea] to-[#b968d1] opacity-15 blur-lg rounded-[16px] group-hover:opacity-25 transition-opacity"></div>
 
-            <div className="relative bg-white border-4 border-[#cd7fea] rounded-[16px] p-[28px] md:p-[32px] flex flex-col items-center gap-[22px] md:gap-[26px] shadow-xl hover:shadow-2xl transition-all duration-300">
+            <div className="relative h-full bg-white border-4 border-[#cd7fea] rounded-[16px] p-[28px] md:p-[32px] flex flex-col items-center gap-[22px] md:gap-[26px] shadow-xl hover:shadow-2xl transition-all duration-300">
               <div className="text-center">
                 <div className="inline-block bg-gradient-to-r from-[#f6eafd] to-[#fdf5ff] border-2 border-[#cd7fea] rounded-full px-[18px] py-[7px] mb-4">
                   <p className="font-['Montserrat'] font-bold text-[#cd7fea] text-[12px] uppercase tracking-wide">
@@ -1081,7 +1081,7 @@ function FinalPricingSection() {
 
               <a
                 href={productUrlUsd}
-                className="inline-flex items-center justify-center bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[20px] py-[18px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[20px] w-full shadow-xl hover:shadow-2xl hover:scale-[1.03] transform"
+                className="mt-auto inline-flex items-center justify-center bg-gradient-to-r from-[#cd7fea] to-[#b968d1] hover:from-[#b968d1] hover:to-[#a557bd] transition-all duration-300 px-[20px] py-[18px] rounded-[12px] font-['Montserrat'] font-bold text-white text-[18px] md:text-[20px] w-full shadow-xl hover:shadow-2xl hover:scale-[1.03] transform"
               >
                 ¡LO QUIERO!
               </a>
@@ -1089,10 +1089,10 @@ function FinalPricingSection() {
           </div>
 
           {/* Card Exterior */}
-          <div className="relative group">
+          <div className="relative group h-full">
             <div className="absolute inset-0 bg-gradient-to-br from-[#cd7fea] to-[#b968d1] opacity-15 blur-lg rounded-[16px] group-hover:opacity-25 transition-opacity"></div>
 
-            <div className="relative bg-white border-4 border-[#cd7fea] rounded-[16px] p-[28px] md:p-[32px] flex flex-col items-center gap-[22px] md:gap-[26px] shadow-xl hover:shadow-2xl transition-all duration-300">
+            <div className="relative h-full bg-white border-4 border-[#cd7fea] rounded-[16px] p-[28px] md:p-[32px] flex flex-col items-center gap-[22px] md:gap-[26px] shadow-xl hover:shadow-2xl transition-all duration-300">
               <div className="text-center">
                 <div className="inline-block bg-gradient-to-r from-[#f6eafd] to-[#fdf5ff] border-2 border-[#cd7fea] rounded-full px-[18px] py-[7px] mb-4">
                   <p className="font-['Montserrat'] font-bold text-[#cd7fea] text-[12px] uppercase tracking-wide">
