@@ -634,7 +634,7 @@ function PricingSection() {
                   $73.690 <span className="text-[#9a9a9a]">-</span> 60 USD
                 </p>
                 <p className="font-['Integral_CF'] text-[#cd7fea] text-[36px] md:text-[52px] leading-[1] mb-2 md:mb-3 whitespace-nowrap">
-                  $52.000 <span className="text-[#6e2682]">-</span> 45 USD
+                  $63.000 <span className="text-[#6e2682]">-</span> 45 USD
                 </p>
                 <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[12px] md:text-[14px] uppercase tracking-wide mb-2 px-2">
                   Pesos Argentinos o si estás en el exterior
@@ -748,7 +748,7 @@ function PricingSection() {
                     MENOS DE
                   </p>
                   <p className="font-['Integral_CF'] text-white text-[42px] md:text-[52px] leading-[1]">
-                    $433
+                    $525
                   </p>
                   <p className="font-['Montserrat'] text-white text-[18px] md:text-[22px] font-bold">
                     EL DÍA
@@ -1072,7 +1072,7 @@ function FinalPricingSection() {
                   $73.690
                 </p>
                 <p className="font-['Integral_CF'] text-[#cd7fea] text-[34px] md:text-[38px] leading-[1] mb-2 md:mb-3 whitespace-nowrap">
-                  $52.000
+                  $63.000
                 </p>
                 <p className="font-['Montserrat'] font-bold text-[#6e2682] text-[13px] md:text-[15px] uppercase mb-2">
                   Pesos Argentinos
