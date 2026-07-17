@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(npm run dev:*)",
-      "WebFetch(domain:35-fuerza-sin-impacto.rominatraetta.com)"
+      "WebFetch(domain:35-fuerza-sin-impacto.rominatraetta.com)",
+      "Bash(grep -rniE \"precio|price|usd|pesos|\\\\\\\\$|ARS\" --include=\"*.tsx\" --include=\"*.ts\" --include=\"*.jsx\" --include=\"*.js\" --include=\"*.json\" --include=\"*.astro\" --include=\"*.html\" -l)"
     ]
   }
 }
